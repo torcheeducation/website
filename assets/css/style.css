@@ -553,7 +553,7 @@ section {
 }
 #services .icon {
   position: absolute;
-  left: -15px;
+  left: 15px;
   top: calc(50% - 32px);
 }
 #services .icon i {
@@ -562,7 +562,7 @@ section {
   transition: 0.5s;
 }
 #services .title {
-  margin-left: 40px;
+  margin-left: 70px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -575,7 +575,7 @@ section {
 }
 #services .description {
   font-size: 14px;
-  margin-left: 40px;
+  margin-left: 70px;
   line-height: 24px;
   margin-bottom: 0;
 }
