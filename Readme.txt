@@ -1,6 +1,4 @@
-Thanks for downloading this template!
+TORCHE Education Official Website
 
-Template Name: NewBiz
-Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-Author: BootstrapMade.com
+Author: Samuel Pangeran Aletheia, BootstrapMade.com
 License: https://bootstrapmade.com/license/
