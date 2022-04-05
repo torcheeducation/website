@@ -1165,61 +1165,84 @@ section {
   }
 }
 /* START Section Price  */
-.container-price {
-  width: 13rem;
-  height: 20.8rem;
-  background-color: #f2f4f7;
-  border-radius: 8px;
-}
-.price-header {
-  height: 3.5rem;
-  background-color: #0067d5;
-  border-radius: 8px;
-  color: white;
-}
-.price-header p {
-  font-size: large;
-  font-weight: bold;
+.pricing .box {
+  padding: 20px;
+  background: #f5faff;
   text-align: center;
-  line-height: 3.5rem;
+  border: 1px solid #fff;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-#price-two {
-  background-color: #0b122a;
+.pricing h3 {
+  font-weight: 400;
+  margin: -20px -20px 20px -20px;
+  padding: 20px 15px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  background: #5885E9;
 }
-.price-body p {
-  font-size: 12px;
-  margin: 10px auto;
-}
-#link-contact {
-  color: #0b122a;
-  margin-top: 50em;
-}
-#priceholder {
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-  margin-top: 10px;
-}
-#child-priceholder {
-  margin-top: -15px;
-  font-size: 10px;
-}
-#special-disc {
-  color: rgb(196, 190, 190);
+.pricing h4 {
+  font-size: 36px;
+  color: #0B122A;
+  font-weight: 900;
+  font-family: "Rajdhani", sans-serif;
   margin-bottom: 20px;
-  margin-top: 20px;
 }
-#contacts {
-  margin-bottom: 90px;
+.pricing h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
 }
-
-.price-footer {
-  background-color: #0067d5;
-  height: 1rem;
-  border-radius: 8px;
-  margin-top: 10px;
+.pricing h4 span {
+  color: #0B122A;
+  font-size: 16px;
+  font-weight: 400;
 }
-
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+.pricing ul li {
+  padding-bottom: 16px;
+}
+.pricing ul i {
+  color: #5fcf80;
+  font-size: 18px;
+  padding-right: 4px;
+}
+.pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+.pricing ul .contact {
+  font-size: 15px;
+  padding-bottom: 18px;
+}
+.pricing ul .contactbtn {
+  font-size: 22px;
+  padding-bottom: 23px;
+  text-decoration: underline;
+}
+.pricing .btn-wrap {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background: #5885E9;
+  text-align: center;
+}
+.pricing .btn-wrap-sp {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background: #0B122A;
+  text-align: center;
+}
 .btn-register {
   width: 10rem;
   height: 2.2rem;
@@ -1234,6 +1257,27 @@ section {
   line-height: 1rem;
   font-weight: lighter;
   font-size: 0.9em;
+  align: center;
+}
+.pricing .btn-register:hover {
+  background: #5885E9;
+  color:#0B122A;
+}
+.pricing .featured h3 {
+  color: #fff;
+  background: #0B122A;
+}
+.pricing .favourite {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #FFAE5F;
+  color: #0B122A;
 }
 /* END Section Price  */
 
