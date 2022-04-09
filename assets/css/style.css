@@ -1281,6 +1281,51 @@ section {
 }
 /* END Section Price  */
 
+/* START Section Tutors  */
+.tutors .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #eef0ef;
+}
+.tutors .member img {
+  margin: -1px -1px 30px -1px;
+}
+.tutors .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+.tutors .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+.tutors .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+.tutors .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+.tutors .member .social {
+  margin-top: 15px;
+}
+.tutors .member .social a {
+  color: #7e9486;
+  transition: 0.3s;
+}
+.tutors .member .social a:hover {
+  color: #0b122a;
+}
+.tutors .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+/* END Section Tutors  */
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
