@@ -103,6 +103,9 @@ h6 {
   padding: 0;
   max-height: 30px;
 }
+#header .logo img:hover {
+  opacity: 0.8;
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -990,7 +993,21 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
-
+#team .readmore {
+  color: #fff;
+  font-weight: 600;
+  background-color: #0B122A;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  padding: 4px 10px;
+  border: 2px solid #0B122A;
+  border-radius: 5px ;
+  margin-top: 10px;
+}
+#team .readmore:hover {
+  background-color: #007bff;
+  border: 2px solid #007bff;
+}
 /* Clients Section
 --------------------------------*/
 #clients {
@@ -1325,6 +1342,7 @@ section {
   margin: 0 2px;
 }
 /* END Section Tutors  */
+
 
 /*--------------------------------------------------------------
 # Footer
