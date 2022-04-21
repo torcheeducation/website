@@ -1400,9 +1400,10 @@ section {
 .courses .trainer .trainer-profile img {
   max-width: 50px;
   border-radius: 50px;
+  margin-left: 10px;
 }
 .courses .trainer .trainer-profile span {
-  padding-left: 10px;
+  padding-left: 6px;
   font-weight: 600;
   font-size: 16px;
   color: #5a6c60;
@@ -1417,8 +1418,10 @@ section {
   font-weight: 700;
   margin-top: 14px;
 }
-
-
+.courses .button {
+  text-align: center;
+  margin: 30px 0px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
