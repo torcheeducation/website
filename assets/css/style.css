@@ -1328,6 +1328,29 @@ section {
 }
 /* END Section Tutors  */
 
+/* START DETAIL TUTOR */
+.bi-star-fill{
+  color: orange;
+  font-size: 2.4em;
+}
+#readMore{
+  color:#00366f;
+  cursor:pointer;
+}
+
+#more{
+  display: none;
+}
+
+#load{
+  color:#0062cc;
+  font-size: 2em;
+}
+
+
+
+/* END DETAIL TUTOR */
+
 /*--------------------------------------------------------------
 # Courses
 --------------------------------------------------------------*/

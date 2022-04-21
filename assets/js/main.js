@@ -242,4 +242,26 @@
     })
   });
 
+
+
 })()
+  //for read-More paragraf
+  function showMore(){
+    let load = document.getElementById("load")
+    let more = document.getElementById("more")
+    let btnMore = document.getElementById("readMore")
+
+    if (load.style.display === "none"){
+      load.style.display ="inline";
+      btnMore.innerHTML = "Read More";
+      more.style.display = "none"
+    }else {
+      load.style.display ="none";
+      btnMore.innerHTML = "Read Less";
+      more.style.display = "inline"
+    }
+  }
+
+ 
+  
+  //end read-More paragraf
