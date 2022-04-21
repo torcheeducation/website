@@ -1326,30 +1326,25 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
-/* END Section Tutors  */
-
-/* START DETAIL TUTOR */
-.bi-star-fill{
+.tutors .rating i{
   color: orange;
   font-size: 2.4em;
 }
-#readMore{
+.tutors #readMore{
   color:#00366f;
   cursor:pointer;
 }
 
-#more{
+.tutors #more{
   display: none;
 }
 
-#load{
+.tutors #load{
   color:#0062cc;
   font-size: 2em;
 }
 
-
-
-/* END DETAIL TUTOR */
+/* END Section Tutors  */
 
 /*--------------------------------------------------------------
 # Courses
