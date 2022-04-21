@@ -1326,20 +1326,27 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
-.tutors .rating i{
-  color: orange;
-  font-size: 2.4em;
+.tutors-details h1{
+  font-weight: bold;
 }
-.tutors #readMore{
+.tutors-details .rating i{
+  color: #ebd234;
+  font-size: 20px;
+}
+.tutors-details h4{
+  font-weight: bold;
+  padding-top: 10px;
+}
+.tutors-details #readMore{
   color:#00366f;
   cursor:pointer;
 }
 
-.tutors #more{
+.tutors-details #more{
   display: none;
 }
 
-.tutors #load{
+.tutors-details #load{
   color:#0062cc;
 }
 /* END Section Tutors  */
