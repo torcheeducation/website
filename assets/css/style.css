@@ -1452,6 +1452,12 @@ section {
   font-size: 16px;
   color: #5a6c60;
 }
+.courses .trainer .trainer-profile span a {
+  color: #5a6c60;
+}
+.courses .trainer .trainer-profile span a:hover {
+  color: #0b6bd3;
+}
 /* Tutor name for overlapiing tutor images  */
 .courses .trainer .trainer-profile .tritutors {
   padding-left: 60px;
