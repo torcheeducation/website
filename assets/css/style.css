@@ -1462,8 +1462,20 @@ section {
 .courses .trainer .trainer-profile .tritutors {
   padding-left: 60px;
 }
+.courses .trainer .trainer-profile .tritutors span a {
+  color: #5a6c60;
+}
+.courses .trainer .trainer-profile .tritutors span a:hover {
+  color: #0b6bd3;
+}
 .courses .trainer .trainer-profile .twotutors {
   padding-left: 35px;
+}
+.courses .trainer .trainer-profile .twotutors span a {
+  color: #5a6c60;
+}
+.courses .trainer .trainer-profile .twotutors span a:hover {
+  color: #0b6bd3;
 }
 /* End of Tutor name for overlapiing tutor images  */
 .courses .trainer .trainer-rank {
