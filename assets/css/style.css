@@ -1300,6 +1300,13 @@ section {
 .tutors .member .member-content {
   padding: 0 20px 30px 20px;
 }
+.tutors .member .member-content h4 a{
+  color: #37423b;
+  transition: 0.3s;
+}
+.tutors .member .member-content h4 a:hover{
+  color: #3271a8;
+}
 .tutors .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
@@ -1320,7 +1327,7 @@ section {
   margin-top: 15px;
 }
 .tutors .member .social a {
-  color: #7e9486;
+  color: #3271a8;
   transition: 0.3s;
 }
 .tutors .member .social a:hover {
