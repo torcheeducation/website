@@ -1166,7 +1166,9 @@ section {
     transform: rotate(360deg);
   }
 }
-/* START Section Price  */
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
   background: #f5faff;
@@ -1283,7 +1285,9 @@ section {
 }
 /* END Section Price  */
 
-/* START Section Tutors  */
+/*--------------------------------------------------------------
+# Tutors
+--------------------------------------------------------------*/
 .tutors .member {
   text-align: center;
   margin-bottom: 20px;
@@ -1356,7 +1360,7 @@ section {
 --------------------------------------------------------------*/
 .courses .course-item {
   border-radius: 5px;
-  border: 1px solid #eef0ef;
+  border: 1px solid #d1cfcf;
   margin-top: 20px;
 }
 .courses .course-content {
@@ -1364,7 +1368,7 @@ section {
 }
 .courses .course-content h3 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
 }
 .courses .course-content h3 a {
   color: #37423b;
@@ -1379,9 +1383,9 @@ section {
 }
 .courses .course-content h4 {
   font-size: 14px;
-  background: #0b122a;
+  background: #f5faff;
   padding: 7px 14px;
-  color: #fff;
+  color: #000000;
   margin: 0;
 }
 .courses .course-content .rating {
@@ -1397,17 +1401,55 @@ section {
   padding-top: 15px;
   border-top: 1px solid #eef0ef;
 }
+.courses .trainer .trainer-profile{
+  position: relative;
+}
 .courses .trainer .trainer-profile img {
   max-width: 50px;
+  border: 3px solid #fff;
   border-radius: 50px;
   margin-left: 10px;
 }
+/* Overlapping tutor images  */
+.courses .trainer .trainer-profile .img1 {
+  max-width: 50px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 3;
+}
+.courses .trainer .trainer-profile .img2 {
+  max-width: 50px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+  left: 25px;
+}
+.courses .trainer .trainer-profile .img3 {
+  max-width: 50px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+}
+/* End of Overlapping tutor images  */
 .courses .trainer .trainer-profile span {
   padding-left: 6px;
   font-weight: 600;
   font-size: 16px;
   color: #5a6c60;
 }
+/* Tutor name for overlapiing tutor images  */
+.courses .trainer .trainer-profile .tritutors {
+  padding-left: 60px;
+}
+.courses .trainer .trainer-profile .twotutors {
+  padding-left: 35px;
+}
+/* End of Tutor name for overlapiing tutor images  */
 .courses .trainer .trainer-rank {
   font-size: 18px;
   color: #657a6d;
