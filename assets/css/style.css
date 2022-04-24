@@ -1495,16 +1495,64 @@ section {
 /*--------------------------------------------------------------
 # Job Listing
 --------------------------------------------------------------*/
+.job-listing .nav-pills{
+    margin-bottom: 25px;
+}
+.job-listing h1{
+  font-weight: 700;
+  font-size: 45px;
+}
+.job-listing .nav-item h6{
+  font-weight: 400;
+  font-size: 18px;
+}
 .job-listing .job-item {
-    border: 1px solid transparent;
-    border-radius: 2px;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-    transition: .5s;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  transition: .5s;
+}
+.job-listing .job-item h5{
+  font-weight: 600;
+}
+.job-listing .job-item:hover {
+  border-color: rgba(0, 0, 0, .08);
+  box-shadow: none;
 }
 
-.job-listing .job-item:hover {
-    border-color: rgba(0, 0, 0, .08);
-    box-shadow: none;
+/*--------------------------------------------------------------
+# Job Details
+--------------------------------------------------------------*/
+.job-details h2{
+  font-weight: 600;
+  font-size: 40px;
+}
+.job-details .job-desc {
+  margin: 40px 0px;
+}
+.job-details .job-desc h4{
+  font-weight: 600;
+  font-size: 30px;
+}
+.job-details .job-desc ul{
+  padding-bottom: 20px;
+}
+.job-details .job-apply {
+  margin-top: 15px;
+}
+.job-details .job-apply h4{
+  font-weight: 700;
+  font-size: 25px;
+}
+.job-details .job-summary{
+  margin-bottom: 20px;
+  padding: 50px;
+}
+.job-details .job-summary h4{
+  font-weight: 600;
+}
+.job-details .job-summary p{
+  margin-bottom: 10px;
 }
 /*--------------------------------------------------------------
 # Footer
