@@ -1514,6 +1514,8 @@ section {
 }
 .job-listing .job-item h5{
   font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 .job-listing .job-item:hover {
   border-color: rgba(0, 0, 0, .08);
