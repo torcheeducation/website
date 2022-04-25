@@ -1303,6 +1303,7 @@ section {
 .tutors .member .member-content h4 a{
   color: #37423b;
   transition: 0.3s;
+  font-size: 22px;
 }
 .tutors .member .member-content h4 a:hover{
   color: #3271a8;
