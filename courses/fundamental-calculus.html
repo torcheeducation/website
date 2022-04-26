@@ -19,7 +19,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Adam Aji Prayoga - TORCHE Education</title>
+    <title>Fundamentals of Calculus - TORCHE Education</title>
     <meta content="Register to more than 30 chemical enigneering subjects available at TORCHE Education" name="description" />
     <meta content="TORCHE Education's Team" name="keywords" />
 
@@ -103,55 +103,264 @@
             <h2>Tutors</h2>
             <ol>
               <li><a href="https://torche.app">Courses</a></li>
-              <li><a href="https://torche.app/tutors">Tutors</a></li>
-              <li>Adam Aji Prayoga</li>
+              <li><a href="https://torche.app/courses">Our Courses</a></li>
+              <li>Fundamentals of Calculus</li>
             </ol>
           </div>
         </div>
       </section>
       <!-- End Breadcrumbs Section -->
       <div class="container mt-3">
-        <a href="../tutors.html" class="fs-5 text-dark"><i class="bi bi-arrow-left me-2 fs-4"></i>Back</a>
+        <a onclick="history.back()" id="backbtn" class="fs-5"><i class="bi bi-arrow-left me-2 fs-4"></i>Back</a>
       </div>
-      <!--Section Tutors -->
-      <section id="detail-tutors" class="tutors-details my-5">
+      <!-- ======= Cource Details Section ======= -->
+      <section id="course-details" class="course-details">
+        <div class="container" data-aos="fade-up">
 
-           <div class="container-fluid">
-               <div class="container">
-                   <div class="row">
-                        <div class="col-lg-3 offset-lg-1 text-center" >
-                            <img src="../assets/img/trainers/tutors-20.jpg" alt="img-team" class="img-fluid rounded-circle mb-3" style="width: 14.5rem;">
-                        </div>
-                        <div class="col-lg-7 " >
-                            <h1>Adam Aji Prayoga</h1>
-                            <p>Fundamentals of Chemistry, Fundamentals of Analytical Chemistry</p>
-                            <div class="d-lg-flex  rating">
-                                <div class="stars me-4">
-                                  <span class="fw-bold"><i class="bi bi-star-fill"></i> 0,0 / 5,0</span>
-                                  <p>( 0 reviews )</p>
-                                </div>
-                            </div>
-                        </div>
-                   </div>
-               </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="../assets/img/courses/course-calculus.webp" class="img-fluid" alt="">
+              <h3>Fundamental of Calculus</h3>
+              <p>
+                This course is the series of University Calculus for science and engineering. It covers Real number system, inequalities, functions and limits, derivatives,
+                applications of derivatives, integrals, applications of integrals, transcendental functions, techniques of integration, indefinite forms, improper integrals,
+                infinite series, 2D and 3D geometries, derivatives in Rn, double integrals, ordinary differential equations.
+              </p>
+            </div>
+            <div class="col-lg-4">
 
-               <div class="container-fluid my-4">
-                   <div class="col-lg-9 offset-lg-2 border-top border-bottom border-end border-start rounded-3 px-4 py-3">
-                     <h4>About The Tutor</h4>
-                     <p class="m-0">
-                       <span id="load">...</span> <span id ="more"></span> <a id="readMore" class="fw-bold" onclick="showMore()">Read More</a></p>
-                   </div>
-               </div>
+              <div class="course-info d-flex justify-content-between align-items-center">
+                <h5>Tutors</h5>
+                <p><a href="https://torche.app/tutors/syailendra-supit">Syailendra Supit</a></p>
+              </div>
 
-               <div class="container-fluid">
-                   <div class="col-lg-9 offset-lg-2 border-top border-bottom border-end border-start rounded-3 px-4 py-2">
-                    <h4 class="fw-bold">Tutor Schedule</h4>
-                    <iframe  style="width: 100%;" height="950px" src="https://docs.google.com/spreadsheets/d/1vI27aRhAQnTB4uuFZiZuJzXRd_3NkjvWwgaaraijGB0/edit#gid=2058222731/pubhtml?widget=true&amp;headers=false" frameborder="0"></iframe>
-                   </div>
-               </div>
-           </div>
-          </section>
-      <!--Section Tutors -->
+              <div class="course-info d-flex justify-content-between align-items-center">
+                <h5>Course Fee</h5>
+                <p><a href="https://torche.app/pricing">See pricing</a></p>
+              </div>
+
+              <div class="course-info d-flex justify-content-between align-items-center">
+                <h5>Reviews</h5>
+                <p class="rating"><i class="bi bi-star-fill"></i> 9/10</p>
+              </div>
+
+              <div class="course-info d-flex justify-content-between align-items-center">
+                <h5>Schedule</h5>
+                <p>Appointment with tutors</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section><!-- End Cource Details Section -->
+
+      <!-- ======= Cource Details Tabs Section ======= -->
+      <section id="cource-details-tabs" class="cource-details-tabs">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Basics of Calculus: Numbers and Functions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Limits</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Derivatives and its Application</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Integral and its Application</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Transcendental Function</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Advanced Techniques of Integration</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-7">Indeterminate Forms and Improper Integrals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-8">Infinite Series</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-9">Conics and Polar Coordinates</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-10">Geometry in Space and Vectors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-11">Derivatives for Functions of Two or More Variables</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-12">Multiple Integrals</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Basics of Calculus: Numbers and Functions</h3>
+                      <p class="fst-italic">This session introduce students to basics of calculus, basic operations, and functions in university calculus. This session includes materials about:</p>
+                      <ol>
+                        <li>Types of Numbers</li>
+                        <li>Linear Equation with Two and Three Variables</li>
+                        <li>Inequalities and Absolute Value</li>
+                        <li>Domain and Range of Function</li>
+                        <li>Cartesian, Cylindrical, and Spherical Coordinate System</li>
+                        <li>Algebraic Function</li>
+                        <li>Trigonometric Function</li>
+                        <li>Composition of Several Function</li>
+                      </ol>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-1.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Et blanditiis nemo veritatis excepturi</h3>
+                      <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                      <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-2.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                      <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+                      <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-3.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                      <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                      <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-4.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-5">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                      <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-6">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                      <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-7">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                      <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-8">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                      <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-9">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                      <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-10">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                      <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-11">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                      <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-12">
+                  <div class="row">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                      <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                      <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="assets/img/course-details-tab-5.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- End Cource Details Tabs Section -->
     </main>
     <!-- End #main -->
 

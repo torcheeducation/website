@@ -1140,6 +1140,13 @@ section {
   color: #0B122A;
 }
 /* END Section Price  */
+/*--------------------------------------------------------------
+# Back Button
+--------------------------------------------------------------*/
+#backbtn{
+  color:#00366f;
+  cursor:pointer;
+}
 
 /*--------------------------------------------------------------
 # Tutors
@@ -1348,6 +1355,115 @@ section {
 .courses .button {
   text-align: center;
   margin: 30px 0px;
+}
+/*--------------------------------------------------------------
+# Cource Details
+--------------------------------------------------------------*/
+.course-details{
+  margin-top: 20px;
+}
+.course-details h3 {
+  font-size: 24px;
+  margin: 30px 0 15px 0;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+}
+.course-details h3:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #eef0ef;
+  bottom: 0;
+  left: 0;
+}
+.course-details h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #5885E9;
+  bottom: 0;
+  left: 0;
+}
+.course-details .course-info {
+  background: #f6f7f6;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+.course-details .course-info h5 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+}
+.course-details .course-info p {
+  margin: 0;
+  font-weight: 400;
+}
+.course-details .rating i {
+  color: #ebd234;
+}
+.course-details .course-info a {
+  color: #0B122A;
+}
+
+/*--------------------------------------------------------------
+# Cource Details Tabs
+--------------------------------------------------------------*/
+.cource-details-tabs {
+  overflow: hidden;
+  padding-top: 0;
+  margin-bottom: 40px;
+}
+.cource-details-tabs .nav-tabs {
+  border: 0;
+}
+.cource-details-tabs .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: #37423b;
+  border-radius: 0;
+  border-right: 2px solid #e2e7e4;
+  font-weight: 600;
+  font-size: 15px;
+}
+.cource-details-tabs .nav-link:hover {
+  color: #5885E9;
+}
+.cource-details-tabs .nav-link.active {
+  color: #5885E9;
+  border-color: #51C1CB;
+}
+.cource-details-tabs .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+.cource-details-tabs .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #37423b;
+}
+.cource-details-tabs .details p {
+  color: #777777;
+}
+.cource-details-tabs .details p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .cource-details-tabs .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+  .cource-details-tabs .nav-link.active {
+    color: #fff;
+    background: #0B122A;
+  }
 }
 /*--------------------------------------------------------------
 # Job Listing
