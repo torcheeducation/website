@@ -1404,6 +1404,21 @@ section {
   margin: 0;
   font-weight: 400;
 }
+.course-details .course-register {
+  background: #f5faff;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+.course-details .course-register h5 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+}
+.course-details .course-register p {
+  margin: 0;
+  font-weight: 400;
+}
 .course-details .rating i {
   color: #ebd234;
 }
