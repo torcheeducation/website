@@ -1524,12 +1524,25 @@ section {
 .job-details .job-desc {
   margin: 40px 0px;
 }
+.job-details .job-desc p{
+  margin-bottom: 5px;
+}
+.job-details .job-desc .course{
+  padding-bottom: 0px;
+}
+.job-details .job-desc .min-req{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-style: italic;
+}
 .job-details .job-desc h4{
   font-weight: 600;
   font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .job-details .job-desc ul{
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .job-details .job-apply {
   margin-top: 15px;
