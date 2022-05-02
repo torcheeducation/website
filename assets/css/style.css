@@ -1686,3 +1686,22 @@ section {
 #footer .credits a:hover {
   color: #f1f7ff;
 }
+/*--------------------------------------------------------------
+# 404 Error Not Found
+--------------------------------------------------------------*/
+.not-found h1{
+  font-weight: 900;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.not-found p{
+  text-align: center;
+  font-size: 18px;
+}
+.not-found .description{
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
