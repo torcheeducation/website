@@ -399,8 +399,8 @@ h6 {
   color: #0b122a;
 }
 #hero .hero-info .btn-services:hover {
-  background: #5885e9;
-  border-color: #0b122a;
+  background: none;
+  border-color: #fff;
   color: #fff;
 }
 
