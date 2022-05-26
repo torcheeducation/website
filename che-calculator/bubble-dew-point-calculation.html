@@ -37,7 +37,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Bubble & Dew Point Calculator - TORCHE Education</title>
-    <meta content="Register to more than 30 chemical enigneering subjects available at TORCHE Education" name="description" />
+    <meta content="Bubble and dew point calculator based on Raoult's ideal law provided by TORCHE Education for process engineer students and professionals" name="description" />
     <meta content="TORCHE Education's Team" name="keywords" />
 
     <!-- Favicons -->
@@ -56,6 +56,10 @@
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <!-- =======================================================
   * Template Name: NewBiz - v4.7.0
@@ -132,6 +136,51 @@
       <!-- End Breadcrumbs Section -->
       <!--Section Team -->
       <section>
+        <div class="container my-5">
+          <h1><b>Bubble Point, Dew Point, and Flash Calculation</b></h1>
+          <p>
+            To perform bubble and dew point calculation, first we must understand the theory of Raoult's Law for ideal mixture.
+          </p>
+          <h3>Raoult's Law</h3>
+          <p>
+            Raoult's law states that the vapor pressure of a solvent above a solution is equal to the vapor pressure of the pure solvent at the same temperature scaled by the mole fraction of the solvent present.
+            There are two major assumptions in Raoult's law, which are:
+            <ul>
+              <li><i>The vapor phase is an ideal gas</i>, which means it can apply only from <b>low to moderate pressures</b>, and</li>
+              <li><i>The liquid phase is an ideal solution</i>, which means it only valid if the chemical species comprise are <b>chemically similar</b>.</li>
+            </ul>
+            The mathematical equations which reflects the Raoult's law based on the two assumptions above is
+            \[\ y_i\ .P=\ x_i\ .P_i^{sat} \quad \quad (i=1,2,...,N) \]
+            where \(x_i\) is liquid-phase mole fraction of component \(i\), \(y_i\) is vapor-phase mole fraction of componen \(i\), \(P\) is the system pressure,
+            and \(P_i^{sat}\) is the saturation pressure of component \(i\) which follows Antoine equation
+            \[ln\,P_i^{sat}=A - {B\over T+ C}\]
+            where \(A\),\(B\), and \(C\) are Antoine constants, and \(T\) is the system temperature. Please bear in mind that different Antoine constants from different references affects the unit of the \(P\) and the \(T\).
+          </p>
+          <h3>Bubble point, dew point, and flash calculations with Raoult's Law</h3>
+          <p>
+            There are five (5) classes to solve VLE problems
+            <ul style="list-style:none;">
+              <li><b>BUBBLE P</b>:&nbsp; Calculate {\(y_i\)} and \(P\), given {\(x_i\)} and \(T\)</li>
+              <li><b>DEW P</b>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate {\(x_i\)} and \(P\), given {\(y_i\)} and \(T\)</li>
+              <li><b>BUBBLE T</b>:&nbsp; Calculate {\(y_i\)} and \(T\), given {\(x_i\)} and \(P\)</li>
+              <li><b>DEW T</b>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate {\(x_i\)} and \(T\), given {\(y_i\)} and \(P\)</li>
+              <li><b>P-T FLASH</b>:&nbsp; Calculate {\(x_i\)} and {\(y_i\)}, given \(P\) and \(T\)</li>
+            </ul>
+            For bubble point calculations which vapor-phase compositions are unknown, we can simplify the calculations by asumming \(\sum y_i=1\), so that the Raoult's law become
+            \[P=\sum_i{x_i P_i^{sat}}\]
+            While for dew point calculations, the unknown liquid-phase compositions can be simplified by asumming \(\sum x_i=1\), so that
+            \[P= {1\over \sum_i{yi/P_i^{sat}}}\]
+            For flash calculation, we calculate the composition based on material balance of the system,
+            \[z_i=V.y_i+L.x_i\]
+            where \(z_i\) is molar composition of the inlet feed, \(V\) is the vapor fractions, and \(L\) is the liquid fractions or \(L=1-V\). Bear in mind that flash calculation <b>can't be calculated</b> if <thead>
+            feed exists as <b>subcooled liquid</b> or <b>superheated vapor</b>.
+          </p>
+          <h3><b>Bubble, Dew, and Flash Calculator</b></h3>
+          <h5><i>Example problem</i></h5>
+          <p>
+            Calculate the flash from a mixture of 15 mol water, 12 mol methanol, 22 mol ethanol, 36 mol propanol, and 15 mol acetone in a system of 1 bar and 50 degree Celsius!
+          </p>
+        </div>
         <div class="container" style="padding-bottom:73.22%; position:relative; display:block; width:100%;">
           <center>
             <iframe style="position:absolute; top:0; left:0;"width="100%" height="100%" frameborder="0" scrolling="yes" src="https://onedrive.live.com/embed?resid=1e2bbc0b7d63d44a%213430&authkey=%21AKPmEmi5Qos4ruc&em=2&wdAllowInteractivity=False&AllowTyping=True&ActiveCell='Metric'!B2&Item=bdp&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&ejss=false"></iframe>
