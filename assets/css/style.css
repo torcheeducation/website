@@ -1685,6 +1685,61 @@ section {
     background: #0B122A;
   }
 }
+
+/*--------------------------------------------------------------
+# Apps
+--------------------------------------------------------------*/
+.apps .app-item {
+  border-radius: 5px;
+  border: 1px solid #d1cfcf;
+  margin-top: 20px;
+}
+.apps .app-content {
+  padding: 15px;
+}
+.apps .app-content h3 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.apps .app-content h3 a {
+  color: #37423b;
+  transition: 0.3s;
+}
+.apps .app-content h3 a:hover {
+  color: #51C1CB;
+}
+.apps .app-content p {
+  font-size: 14px;
+  color: #777777;
+}
+.apps .app-content .app-description {
+  height: 90px;
+}
+.apps .app-content h4 {
+  font-size: 14px;
+  background: #f5faff;
+  padding: 7px 14px;
+  color: #000000;
+  margin: 0;
+}
+.apps .app-content .rating {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #37423b;
+}
+.apps .app-content .rating i {
+  color: #ebd234;
+}
+.apps .app-head {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 14px;
+}
+.apps .button {
+  text-align: center;
+  margin: 30px 0px;
+}
 /*--------------------------------------------------------------
 # Job Listing
 --------------------------------------------------------------*/
