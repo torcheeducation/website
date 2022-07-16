@@ -253,6 +253,7 @@
 
 
 })()
+
   //for read-More paragraf
   function showMore(){
     let load = document.getElementById("load")
@@ -270,6 +271,44 @@
     }
   }
 
-
-
   //end read-More paragraf
+
+  //for see-More paragraf di halaman utama
+  let noOfCharac = 70;
+  let descriptionTutor = document.querySelectorAll(".short-desc-tutor");
+  let descriptionCourse = document.querySelectorAll(".course-description");
+
+  descriptionTutor.forEach(content => {
+    //If text length is less that noOfCharac... then hide the read more button
+    if(content.textContent.length < noOfCharac){
+        content.nextElementSibling.style.display = "none";
+    }
+    else{
+        let displayText = content.textContent.slice(0,noOfCharac);
+        let moreText = content.textContent.slice(noOfCharac);
+        content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span><a class="fw-bold" onclick="seeMore(this)">See More</a>`;
+    }
+  });
+
+  descriptionCourse.forEach(content => {
+    //If text length is less that noOfCharac... then hide the read more button
+    if(content.textContent.length < noOfCharac){
+        content.nextElementSibling.style.display = "none";
+    }
+    else{
+        let displayText = content.textContent.slice(0,noOfCharac);
+        let moreText = content.textContent.slice(noOfCharac);
+        content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span><a class="fw-bold" onclick="seeMore(this)">See More</a>`;
+    }
+  });
+
+  function seeMore(btn){
+    let post = btn.parentElement;
+    post.querySelector(".dots").classList.toggle("hide");
+    post.querySelector(".more").classList.toggle("hide");
+    btn.textContent == "See More" ? btn.textContent = "See Less" : btn.textContent = "See More";
+}
+
+  //end see-More paragraf
+
+

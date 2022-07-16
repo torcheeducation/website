@@ -834,7 +834,11 @@
             </div>
           </div> <!-- End Course Item-->
 
+
+
         </div>
+
+        <a id="loadMore" class="button d-flex justify-content-center btn-outline-primary rounded-pill px-5 py-1 border-bottom border-top border-end border-start border-primary"> Load More </a>
 
         <div class="row">
           <div class="button">
@@ -911,6 +915,24 @@
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Script Load More -->
+    <script>
+      //load more
+      $(document).ready(function(){
+        $(".course-item").slice(0, 6).show();
+        $("#loadMore").on("click", function(e){
+          e.preventDefault();
+          $(".course-item:hidden").slice(0, 6).slideDown();
+          if($(".course-item:hidden").length == 0) {
+            $("#loadMore").text("All courses have been showed!").addClass("noContent");
+          }
+        });
+      })
+      //end load more
+    </script>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>

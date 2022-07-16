@@ -1209,11 +1209,14 @@ section {
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #eef0ef;
+  display: none; /* Hide all tutors, until load more is clicked */
 }
 .tutors .member img {
   margin: -1px -1px 30px -1px;
 }
 .tutors .member .member-content {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px 30px 20px;
 }
 .tutors .member .member-content h4 a{
@@ -1229,7 +1232,7 @@ section {
   margin-bottom: 2px;
   font-size: 18px;
 }
-.tutors .member span {
+.tutors .member .subject {
   font-style: italic;
   display: block;
   font-size: 13px;
@@ -1277,6 +1280,19 @@ section {
 .tutors-details #load{
   color:#0062cc;
 }
+
+/* This one is for see more function purposes */
+.desc-tutor .hide{
+  display: none;
+}
+
+/* this one is for load more function if there are no tutors left */
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+
 /* END Section Tutors  */
 
 /*--------------------------------------------------------------
@@ -1416,6 +1432,7 @@ section {
   border-radius: 5px;
   border: 1px solid #d1cfcf;
   margin-top: 20px;
+  display: none; /* Hide all courses, until load more is clicked */
 }
 .courses .course-content {
   padding: 15px;
@@ -1538,6 +1555,11 @@ section {
 .courses .button {
   text-align: center;
   margin: 30px 0px;
+}
+
+/* This one is for see more function purposes */
+.course-content .hide{
+  display: none;
 }
 /*--------------------------------------------------------------
 # Course Details
