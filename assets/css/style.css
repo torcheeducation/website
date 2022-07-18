@@ -1422,6 +1422,19 @@ section {
   margin-bottom: 15px;
 }
 
+.events-details .events-register .closed {
+  color: red;
+}
+
+.events-details .speakers-info{
+  text-align: justify ;
+}
+
+.events-details .events-detail-documentation{
+  margin-bottom: 20px;
+  width: 100%;
+}
+
 
 /* END Section Events  */
 
