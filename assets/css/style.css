@@ -1202,6 +1202,195 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.services-details-tabs {
+  overflow: hidden;
+  padding-top: 0;
+  margin-bottom: 40px;
+}
+
+.services-details-tabs .navigation-services{
+  background-color: #0b122a;
+}
+
+.services-details-tabs .navigation-services .nav-service{
+  margin-top:30px;
+}
+
+.services-details-tabs .navigation-services .nav-service  {
+  border: 0px solid #fff;
+}
+
+.services-details-tabs .navigation-services .nav-service .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 20px;
+  transition: 0.3s;
+  color: #ffffff;
+  border-radius: 0;
+  /* border-right: 2px solid #e2e7e4; */
+  font-weight: 600;
+  font-size: 15px;
+}
+.services-details-tabs .navigation-services .nav-service .nav-link:hover {
+  color: #5885E9;
+  /* background-color: #2c205a; */
+}
+.services-details-tabs .navigation-services .nav-service .nav-link.active {
+  color: #5885E9;
+  font-weight: 700;
+  border-color: #51C1CB;
+  background-color:#0b122a;
+}
+.services-details-tabs .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+.services-details-tabs .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #37423b;
+}
+.services-details-tabs .details p {
+  color: #777777;
+}
+.services-details-tabs .details p:last-child {
+  margin-bottom: 0;
+}
+
+.the-detail-of-services {
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 120px;
+}
+
+.the-detail-of-services .description-services{
+  padding-top: 30px;
+  text-align: justify;
+}
+
+.the-detail-of-services .skills {
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.the-detail-of-services .skills .all-skill{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  margin-left: -40px
+}
+
+.the-detail-of-services .skills .all-skill li{
+  padding: 10px 20px 10px 20px;
+  background-color: #5885E9;
+  border: 1.5px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.services-details-tabs .the-detail-of-services .testimonial h3{
+  padding-top: 20px;
+}
+
+.services-details-tabs .the-detail-of-services .testimonial p{
+  margin-top: 10px;
+}
+
+.services-details-tabs .the-detail-of-services .testimonial .fa-quote-right{
+  float: right;
+  margin-top: -20px;
+}
+
+.services-details-tabs .the-detail-of-services .testimonial .testimonial-identity .testimonial-name{
+  font-weight: 600;
+}
+
+.services-details-tabs .the-detail-of-services .testimonial .testimonial-identity .testimonial-position{
+  margin-top: -15px;
+  font-weight: 500;
+  color: #777777;
+  font-size: 14px;
+}
+
+.services-details-tabs .the-detail-of-services .second-grid{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.register-button-service .btn{
+  margin: 10px;
+  padding: 10px 20px 10px 20px;
+  background-color: #5885e9;
+  border-radius: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+}
+
+.register-button-service .btn:hover{
+  margin-top: 20px;
+  background-color: #5885e9;
+  border-radius: 3px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
+}
+
+.register-button-service .btn:active{
+  background-color: #a2bfff;
+  color: #2990ff;
+  transition: 0.2s;
+}
+
+.register-button-service .btn a{
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .services-details-tabs .navigation-services{
+    margin-top: 10px;
+    background-color: transparent;
+  }
+
+  .services-details-tabs .navigation-services .nav-service{
+    margin-top: 0px;
+  }
+
+  .services-details-tabs .navigation-services li{
+    /* margin-top: 3px; */
+    background-color: #0b122a;
+  }
+
+  
+  .services-details-tabs .nav-link {
+    border: 0;
+    padding: 15px;
+    margin-bottom: 5px;
+  }
+  .services-details-tabs .nav-link.active {
+    color: #fff;
+    background: #0B122A;
+  }
+
+  .the-detail-of-services {
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 0px;
+  }
+
+  .services-details-tabs .the-detail-of-services .second-grid{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+
+/* END Section Services  */
+
+/*--------------------------------------------------------------
 # Tutors
 --------------------------------------------------------------*/
 .tutors .member {

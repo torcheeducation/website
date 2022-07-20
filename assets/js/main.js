@@ -312,3 +312,32 @@
   //end see-More paragraf
 
 
+  //auto-scroll for course details
+  function autoScrollCoursesDetails() {
+    const element = document.getElementById("the-detail-of-course");
+    let navbarOffset = 60;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
+
+  //end auto-scroll for course details
+
+  //auto-scroll for services pages
+  function autoScrollServicesPage() {
+    const element = document.getElementById("the-detail-of-services");
+    let navbarOffset = 60;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
+
+  //end auto-scroll for services pages
