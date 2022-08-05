@@ -2438,17 +2438,17 @@ section {
 --------------------------------------------------------------*/
 
 /*** Header ***/
-.header-carousel .container,
-.page-header .container {
+#career-carousel .header-carousel .container,
+#career-carousel .page-header .container {
     position: relative;
     padding: 45px 0 45px 35px;
     border-left: 15px solid #007bff;
 }
 
-.header-carousel .container::before,
-.header-carousel .container::after,
-.page-header .container::before,
-.page-header .container::after {
+#career-carousel .header-carousel .container::before,
+#career-carousel .header-carousel .container::after,
+#career-carousel .page-header .container::before,
+#career-carousel .page-header .container::after {
     position: absolute;
     content: "";
     top: 0;
