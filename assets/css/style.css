@@ -2071,10 +2071,17 @@ section {
   margin-right: 0;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   .courses .courses-filters li {
     font-size: 14px;
     margin: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses .courses-filters li {
+    font-size: 12px;
+    margin: 0 3px;
   }
 }
 
@@ -2084,7 +2091,7 @@ section {
   border-radius: 5px;
   border: 1px solid #d1cfcf;
   margin-top: 20px;
-  display: none; 
+  /* display: none;  */
   /* Hide all courses, until load more is clicked */
   min-height: 620px;
   max-height: 620px;
