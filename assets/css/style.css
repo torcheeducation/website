@@ -2518,7 +2518,27 @@ section {
     margin-top: -15px;
 }
 
-@media (max-width: 768px) {
+.display-5 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.desc-carousel-career{
+  font-size: 20px;
+}
+
+@media (max-width: 950px) {
+    .display-5 {
+        font-size: 24px;
+    }
+
+    .desc-carousel-career{
+      font-size: 16px;
+    }
+}
+
+/* @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
         min-height: 500px;
@@ -2571,7 +2591,7 @@ section {
 .header-carousel .owl-nav .owl-next:hover {
     background: #0067d5;
     border-color: #0067d5;
-}
+} */
 
 .page-header {
     background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../img/carousel-1.jpg) center center no-repeat;
