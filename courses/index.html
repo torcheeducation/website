@@ -137,6 +137,15 @@
       
         <div class="courses-isotope" data-courses-filter="*" data-courses-layout="masonry" data-sort-value="original-order">
         
+          <div class="button-all" style="display:flex; justify-content: flex-end; margin: 15px;">
+            <div class="btn-group sort-button-group pull-right" style="border: 0.1px solid rgba(0, 0, 0, 0.152); border-radius: 5px">
+              <button class="btn btn-default" data-sort-direction="asc" data-sort-value="original-order"
+                type="button">Original Order <span aria-hidden="true" class="bi bi-caret-up-fill"></span></button>
+              <button class="btn btn-default" data-sort-direction="asc" data-sort-value="coursetitle"
+                type="button">Sort by Name <span aria-hidden="true" class="bi bi-caret-up-fill"></span></button>
+            </div>
+          </div>
+
           <!-- Start Projects Filters -->
           <div class="filters">
             <ul class="courses-filters" data-aos="fade-up" data-aos-delay="100">
@@ -1010,9 +1019,9 @@
       
           </div>
       
-          <a id="loadMore" style="cursor: pointer;"
+          <!-- <a id="loadMore" style="cursor: pointer;"
             class="button d-flex justify-content-center btn-outline-primary rounded-pill px-5 py-1 border-bottom border-top border-end border-start border-primary"
-            onmouseover=""> Load More </a>
+            onmouseover=""> Load More </a> -->
       
           <div class="row">
             <div class="button">
@@ -1149,6 +1158,38 @@
   </script> -->
 
   <script>
+    var $grid = $('.courses-container').isotope({
+      itemSelector : '.courses-items',
+      getSortData: {
+        coursetitle: '.course-title'
+      }
+    });
+
+    $('.sort-button-group').on( 'click', 'button', function() {
+
+      /* Get the element name to sort */
+      var sortValue = $(this).attr('data-sort-value');
+      console.log(sortValue);
+  
+      /* Get the sorting direction: asc||desc */
+      var direction = $(this).attr('data-sort-direction');
+  
+      /* convert it to a boolean */
+      var isAscending = (direction == 'asc');
+      var newDirection = (isAscending) ? 'desc' : 'asc';
+  
+      /* pass it to isotope */
+      $grid.isotope({ sortBy: sortValue, sortAscending: isAscending });
+  
+      $(this).attr('data-sort-direction', newDirection);
+  
+      var span = $(this).find('.bi');
+      span.toggleClass('bi-caret-up-fill bi-caret-down-fill');
+  
+    });
+  </script>
+
+  <script>
     $('.courses-container').isotope({
       itemSelector : '.courses-items',
       //getSortData: {
@@ -1158,6 +1199,7 @@
 
     $('.courses-filters').on( 'click', 'li', function() {
       var filterValue = $( this ).attr('data-filter');
+      // console.log(filterValue);
       // var sortValue = $(this).attr('data-sort-value');
       $('.courses-container').isotope({ filter: filterValue});
       // $('.courses-container').isotope({ sortBy: sortValue});
@@ -1165,6 +1207,8 @@
       $( this ).addClass('filter-active');
     });
   </script>
+
+
 
   <!-- Script Load More (still figure out how to implement it since the function below can't be used cause i use isotope)-->
 
