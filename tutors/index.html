@@ -133,26 +133,38 @@
       <section id="tutors" class="tutors my-5">
         <div class="container">
 
-          <div class="mb-3 row">
+          <!-- <div class="mb-3 row">
             <label for="staticEmail" class="col-sm-2 col-12 col-form-label">Sort By</label>
             <div class="col-sm-10 col-12">
-              <select class="form-select mb-3" aria-label=".form-select-sm">
-                <option selected>Original Order</option>
-                <option value="1">A-Z</option>
-                <option value="2">Z-A</option>
+              <select class="form-select mb-3 button-group sort-by-button-group" aria-label=".form-select-sm">
+                <option data-sort-value="original-order" class="is-selected" selected>Original Order</option>
+                <option data-sort-value="ascending" value="1">A-Z</option>
+                <option data-sort-value="descending" value="2">Z-A</option>
               </select>
+            </div>
+          </div> -->
+
+          <div class="button-all" style="display:flex; justify-content: flex-end; margin: 15px;">
+            <div class="btn-group sort-button-group pull-right" style="border: 0.1px solid rgba(0, 0, 0, 0.152); border-radius: 5px">
+              <button class="btn btn-default" data-sort-direction="asc" data-sort-value="original-order"
+                type="button">Original Order <span aria-hidden="true" class="bi bi-caret-up-fill"></span></button>
+              <button class="btn btn-default" data-sort-direction="asc" data-sort-value="memberfullname"
+                type="button">Sort by Name <span aria-hidden="true" class="bi bi-caret-up-fill"></span></button>
             </div>
           </div>
           
+          
 
-          <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-down" data-aos-delay="100">
-              <div class="member">
-                <img src="../assets/img/trainers/tutors-1.jpg" class="img-fluid" alt="">
-                <div class="member-content">
-                  <h4 class="member-full-name"><a href="https://torche.app/tutors/felix-pratama">Felix Pratama</a></h4>
-                  <span class="subject">Process Plant Design, Product Design and Development, Transport Phenomena, Fluid and Particle
-                    Mechanics</span>
+          <div class="row tutors-container" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
+                <div class="member">
+                  <img src="../assets/img/trainers/tutors-1.jpg" class="img-fluid" alt="">
+                  <div class="member-content">
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/felix-pratama">Felix Pratama</a></h4>
+                    <span class="subject">Process Plant Design, Product Design and Development, Transport Phenomena, Fluid and
+                      Particle
+                      Mechanics</span>
                     <div class="desc-tutor">
                       <p class="short-desc-tutor">
                         Felix has 4 years-experience in handling supply chain management at consumer goods company in
@@ -160,173 +172,181 @@
                         lecturer assistant at Universitas Indonesia.
                       </p>
                     </div>
-                  
 
-                  <div class="social">
-                    <a href="https://www.instagram.com/lixpratama/"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/felix-pratama-257295112/"><i class="bi bi-linkedin"></i></a>
+                    <div class="social">
+                      <a href="https://www.instagram.com/lixpratama/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/felix-pratama-257295112/"><i class="bi bi-linkedin"></i></a>
+                    </div>
 
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-down" data-aos-delay="100">
-              <div class="member">
-                <img src="../assets/img/trainers/tutors-2.jpg" class="img-fluid" alt="">
-                <div class="member-content">
-                  <h4 class="member-full-name"><a href="https://torche.app/tutors/leon-lukhas-santoso">Leon Lukhas Santoso</a></h4>
-                  <span class="subject">Chemical Reaction Engineering</span>
-                  <div class="desc-tutor">
-                    <p class="short-desc-tutor">
-                      Leon teaches chemical engineering subjects since 2018 as lecturer assistant at Universitas
-                      Indonesia. He obtained his Master Degree in Chemical Engineering Science at National Taiwan
-                      University of Science and Technology, Taipei.
-                    </p>
-                  </div>
-                  
-                  <div class="social">
-                    <a href="https://twitter.com/Leonsantoso"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/leon.santoso/"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/leon-santoso/"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-down" data-aos-delay="100">
-              <div class="member">
-                <img src="../assets/img/trainers/tutors-3.jpg" class="img-fluid" alt="">
-                <div class="member-content">
-                  <h4 class="member-full-name"><a href="https://torche.app/tutors/muhammad-yusuf-arya">Muhammad Yusuf Arya Ramadhan</a></h4>
-                  <span class="subject">Bioprocess Engineering, Engineering Economy</span>
-                  <div class="desc-tutor">
-                    <p class="short-desc-tutor">
-                      Arya is a researcher in bioprocess topics since 2016 at Universitas Indonesia. He experienced
-                      handling manufacturing in fatty acid at Unilever Oleochemical Indonesia.
-                    </p>
-                  </div>
-                  
-                  <div class="social">
-                    <a href="https://twitter.com/arya1302"><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i
-                        class="bi bi-journal-album"></i></a>
-                    <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-right" data-aos-delay="100">
-              <div class="member">
-                <img src="../assets/img/trainers/tutors-4.jpg" class="img-fluid" alt="">
-                <div class="member-content">
-
-                  <h4 class="member-full-name"><a href="https://torche.app/tutors/sendy-winata">Sendy Winata</a></h4>
-                  <span class="subject">Fundamentals of Mass Transfer, Process Control and Dynamics</span>
-                  <div class="desc-tutor">
-                    <p class="short-desc-tutor">
-                      Sendy experienced in process control in oil and gas industry and handling supply chain management at
-                      fast moving customer goods company in Indonesia
-                    </p>
-                  </div>
-                  
-                  <div class="social">
-                    <a href="https://www.instagram.com/sendywee/?hl=en/"><i class="bi bi-instagram"></i></a>
-                    <a href="https://id.linkedin.com/in/sendy-winata-941265168"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              <div class="member">
-                <img src="../assets/img/trainers/tutors-5.jpg" class="img-fluid" alt="">
-                <div class="member-content">
-                  <h4 class="member-full-name"><a href="https://torche.app/tutors/syailendra-supit">Syailendra Supit</a></h4>
-                  <span class="subject">Chemical Engineering Mathematics, Fundamentals of Calculus, Fluid Particle Mechanics, Numerical
-                    Computation for Engineers</span>
-
-                  <div class="desc-tutor">
-                    <p class="short-desc-tutor">
-                      Syailendra is a tutor at TORCHE Education and currently pursuing master degree at Institut Teknologi
-                      Bandung.
-                    </p>
-                  </div>
-                  
-                  <div class="social"-->
-                    <!-- <a href="https://twitter.com/Leonsantoso"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.facebook.com/leon.santoso/"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/leon-santoso/"><i class="bi bi-linkedin"></i></a> -->
-                  <!--/div>
-                </div>
-              </div>
-            </div-->
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
-              <div class="member">
-                <img src="../assets/img/trainers/tutors-6.jpg" class="img-fluid" alt="">
-                <div class="member-content">
-                  <h4 class="member-full-name"><a href="https://torche.app/tutors/samuel-pangeran-aletheia">Samuel Pangeran Aletheia</a></h4>
-                  <span class="subject">Chemical Engineering Mathematics, Chemical Engineering Thermodynamics, Process Equipment
-                    Design</span>
-
-                  <div class="desc-tutor">
-                    <p class="short-desc-tutor">
-                      Graduated from Chemical Engineering major at Universitas Indonesia (Bachelor Degree) and Institut
-                      Teknologi Bandung (Master Degree), Samuel handles many projects in oil and gas industries.
-                    </p>
-                  </div>
-
-                  <div class="social">
-                    <a href="https://twitter.com/sam_pangeran"><i class="bi bi-twitter"></i></a>
-                    <a href="https://ms-my.facebook.com/samuel.p.silalahi"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/sam_pangeran"><i class="bi bi-instagram"></i></a>
-                    <a href="https://id.linkedin.com/in/samuel-pangeran-aletheia-ba616a118"><i
-                        class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
+                <div class="member">
+                  <img src="../assets/img/trainers/tutors-2.jpg" class="img-fluid" alt="">
+                  <div class="member-content">
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/leon-lukhas-santoso">Leon Lukhas Santoso</a>
+                    </h4>
+                    <span class="subject">Chemical Reaction Engineering</span>
+                    <div class="desc-tutor">
+                      <p class="short-desc-tutor">
+                        Leon teaches chemical engineering subjects since 2018 as lecturer assistant at Universitas
+                        Indonesia. He obtained his Master Degree in Chemical Engineering Science at National Taiwan
+                        University of Science and Technology, Taipei.
+                      </p>
+                    </div>
             
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
-              <div class="member">
-                <img src="../assets/img/trainers/tutors-24.jpg" class="img-fluid" alt="">
-                <div class="member-content">
-                  <h4 class="member-full-name"><a href="https://torche.app/tutors/ahmad-syauqi">Ahmad Syauqi</a></h4>
-                  <span class="subject">Chemical Engineering Thermodynamics, Process Equipment Design, Process Plant Design</span>
-
-                  <div class="desc-tutor">
-                    <p class="short-desc-tutor">
-                      Master Degree from Chemical Engineering major at Universitas Indonesia, Syauqi has many publications in renewable and sustainable energy.
-                    </p>
-                  </div>
-
-                  <div class="social">
-                    <!-- a href="https://twitter.com/sam_pangeran"><i class="bi bi-twitter"></i></a>
-                    <a href="https://ms-my.facebook.com/samuel.p.silalahi"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/sam_pangeran"><i class="bi bi-instagram"></i></a>
-                    <a href="https://id.linkedin.com/in/samuel-pangeran-aletheia-ba616a118"><i
-                        class="bi bi-linkedin"></i></a-->
+                    <div class="social">
+                      <a href="https://twitter.com/Leonsantoso"><i class="bi bi-twitter"></i></a>
+                      <a href="https://www.facebook.com/leon.santoso/"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.linkedin.com/in/leon-santoso/"><i class="bi bi-linkedin"></i></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-          </div>
-
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-right" data-aos-delay="100">
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
+                <div class="member">
+                  <img src="../assets/img/trainers/tutors-3.jpg" class="img-fluid" alt="">
+                  <div class="member-content">
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/muhammad-yusuf-arya">Muhammad Yusuf Arya
+                        Ramadhan</a></h4>
+                    <span class="subject">Bioprocess Engineering, Engineering Economy</span>
+                    <div class="desc-tutor">
+                      <p class="short-desc-tutor">
+                        Arya is a researcher in bioprocess topics since 2016 at Universitas Indonesia. He experienced
+                        handling manufacturing in fatty acid at Unilever Oleochemical Indonesia.
+                      </p>
+                    </div>
+            
+                    <div class="social">
+                      <a href="https://twitter.com/arya1302"><i class="bi bi-twitter"></i></a>
+                      <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i class="bi bi-journal-album"></i></a>
+                      <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
+                <div class="member">
+                  <img src="../assets/img/trainers/tutors-4.jpg" class="img-fluid" alt="">
+                  <div class="member-content">
+            
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/sendy-winata">Sendy Winata</a></h4>
+                    <span class="subject">Fundamentals of Mass Transfer, Process Control and Dynamics</span>
+                    <div class="desc-tutor">
+                      <p class="short-desc-tutor">
+                        Sendy experienced in process control in oil and gas industry and handling supply chain management at
+                        fast moving customer goods company in Indonesia
+                      </p>
+                    </div>
+            
+                    <div class="social">
+                      <a href="https://www.instagram.com/sendywee/?hl=en/"><i class="bi bi-instagram"></i></a>
+                      <a href="https://id.linkedin.com/in/sendy-winata-941265168"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!--div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+                        <div class="member">
+                          <img src="../assets/img/trainers/tutors-5.jpg" class="img-fluid" alt="">
+                          <div class="member-content">
+                            <h4 class="member-full-name"><a href="https://torche.app/tutors/syailendra-supit">Syailendra Supit</a></h4>
+                            <span class="subject">Chemical Engineering Mathematics, Fundamentals of Calculus, Fluid Particle Mechanics, Numerical
+                              Computation for Engineers</span>
+          
+                            <div class="desc-tutor">
+                              <p class="short-desc-tutor">
+                                Syailendra is a tutor at TORCHE Education and currently pursuing master degree at Institut Teknologi
+                                Bandung.
+                              </p>
+                            </div>
+                            
+                            <div class="social"-->
+            <!-- <a href="https://twitter.com/Leonsantoso"><i class="bi bi-twitter"></i></a>
+                                  <a href="https://www.facebook.com/leon.santoso/"><i class="bi bi-facebook"></i></a>
+                                  <a href="https://www.linkedin.com/in/leon-santoso/"><i class="bi bi-linkedin"></i></a> -->
+            <!--/div>
+                          </div>
+                        </div>
+                      </div-->
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
+                <div class="member">
+                  <img src="../assets/img/trainers/tutors-6.jpg" class="img-fluid" alt="">
+                  <div class="member-content">
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/samuel-pangeran-aletheia">Samuel Pangeran
+                        Aletheia</a></h4>
+                    <span class="subject">Chemical Engineering Mathematics, Chemical Engineering Thermodynamics, Process Equipment
+                      Design</span>
+            
+                    <div class="desc-tutor">
+                      <p class="short-desc-tutor">
+                        Graduated from Chemical Engineering major at Universitas Indonesia (Bachelor Degree) and Institut
+                        Teknologi Bandung (Master Degree), Samuel handles many projects in oil and gas industries.
+                      </p>
+                    </div>
+            
+                    <div class="social">
+                      <a href="https://twitter.com/sam_pangeran"><i class="bi bi-twitter"></i></a>
+                      <a href="https://ms-my.facebook.com/samuel.p.silalahi"><i class="bi bi-facebook"></i></a>
+                      <a href="https://www.instagram.com/sam_pangeran"><i class="bi bi-instagram"></i></a>
+                      <a href="https://id.linkedin.com/in/samuel-pangeran-aletheia-ba616a118"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
+                <div class="member">
+                  <img src="../assets/img/trainers/tutors-24.jpg" class="img-fluid" alt="">
+                  <div class="member-content">
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/ahmad-syauqi">Ahmad Syauqi</a></h4>
+                    <span class="subject">Chemical Engineering Thermodynamics, Process Equipment Design, Process Plant Design</span>
+            
+                    <div class="desc-tutor">
+                      <p class="short-desc-tutor">
+                        Master Degree from Chemical Engineering major at Universitas Indonesia, Syauqi has many publications in
+                        renewable and sustainable energy.
+                      </p>
+                    </div>
+            
+                    <div class="social">
+                      <!-- a href="https://twitter.com/sam_pangeran"><i class="bi bi-twitter"></i></a>
+                                <a href="https://ms-my.facebook.com/samuel.p.silalahi"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/sam_pangeran"><i class="bi bi-instagram"></i></a>
+                                <a href="https://id.linkedin.com/in/samuel-pangeran-aletheia-ba616a118"><i
+                                    class="bi bi-linkedin"></i></a-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-7.jpg" class="img-fluid" alt="">
                   <div class="member-content">
                     <h4 class="member-full-name"><a href="https://torche.app/tutors/amalia-weediyanti">Amalia Weediyanti</a></h4>
-
+            
                     <span class="subject">Cell Culture for Engineers, Heat Transfer</span>
                     <div class="desc-tutor">
                       <p class="short-desc-tutor">
@@ -334,23 +354,24 @@
                         Culture and Heat Transfer since 2020.
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                       <a href="https://www.instagram.com/amaliaweediy/"><i class="bi bi-instagram"></i></a>
-                      <a href="https://www.linkedin.com/in/amalia-weediyanti-5882b0232/"><i
-                          class="bi bi-linkedin"></i></a>
-
+                      <a href="https://www.linkedin.com/in/amalia-weediyanti-5882b0232/"><i class="bi bi-linkedin"></i></a>
+            
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              </div> 
+            </div>
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-8.jpg" class="img-fluid" alt="">
                   <div class="member-content">
                     <h4 class="member-full-name"><a href="https://torche.app/tutors/sharen-kevin">Sharen Kevin</a></h4>
-
+            
                     <span class="subject">Mass and Energy Balance, Process Engineering Drawing</span>
                     <div class="desc-tutor">
                       <p class="short-desc-tutor">
@@ -358,7 +379,7 @@
                         teaches Mass & Energy Balances and Engineering Drawing.
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                       <a href="https://www.instagram.com/sharenkevin/"><i class="bi bi-instagram"></i></a>
                       <a href="http://www.linkedin.com/in/sharenkevin"><i class="bi bi-linkedin"></i></a>
@@ -366,14 +387,17 @@
                   </div>
                 </div>
               </div>
-
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            </div>
+          
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-9.jpg" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4 class="member-full-name"><a href="https://torche.app/tutors/muhammad-arif-darmawan">Muhammad Arif Darmawan</a></h4>
-
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/muhammad-arif-darmawan">Muhammad Arif
+                        Darmawan</a></h4>
+            
                     <span class="subject">Fundamentals of Analytical Chemistry, Fundamentals of Chemistry, Organic Chemistry for
                       Engineers</span>
                     <div class="desc-tutor">
@@ -382,25 +406,26 @@
                         science
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
-
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-right" data-aos-delay="100">
+          
+          
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-10.jpg" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4 class="member-full-name"><a href="https://torche.app/tutors/syahdan-amir-muhammad">Syahdan Amir Muhammad</a></h4>
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/syahdan-amir-muhammad">Syahdan Amir Muhammad</a>
+                    </h4>
                     <span class="subject">Chemical Engineering Thermodynamics, Chemical Reaction Engineering, Fundamentals of Heat
                       Transfer, Transport Phenomena</span>
-
+            
                     <div class="desc-tutor">
                       <p class="short-desc-tutor">
                         Syahdan is a Master of Chemical Engineering candidate at Institut Teknologi Bandung, which has
@@ -408,39 +433,43 @@
                         awarded with LPDP Kemenkeu RI (PK-153)
                       </p>
                     </div>
-                    
+            
                     <div class="social">
-                      <a href="https://www.linkedin.com/in/syahdan-amir-muhammad-8323b9144/"><i
-                          class="bi bi-linkedin"></i></a>
+                      <a href="https://www.linkedin.com/in/syahdan-amir-muhammad-8323b9144/"><i class="bi bi-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            </div>
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-11.jpg" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4 class="member-full-name"><a href="https://torche.app/tutors/athallia-qatrunnada">Athallia Qatrunnada</a></h4>
-
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/athallia-qatrunnada">Athallia Qatrunnada</a>
+                    </h4>
+            
                     <span class="subject">Biochemical Engineering, Biological Cell</span>
                     <!-- <div class="desc-tutor">
-                      <p class="short-desc-tutor">
-
-                      </p>
-                    </div> -->
-                    
+                                  <p class="short-desc-tutor">
+            
+                                  </p>
+                                </div> -->
+            
                     <div class="social">
                       <!-- <a href="https://twitter.com/arya1302"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i class="bi bi-journal-album"></i></a>
-                        <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a> -->
+                                    <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i class="bi bi-journal-album"></i></a>
+                                    <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a> -->
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            </div>
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-12.jpg" class="img-fluid" alt="">
                   <div class="member-content">
@@ -452,7 +481,7 @@
                         Chemical Engineering ITS Surabaya.
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                       <a href="https://www.instagram.com/ridzki93/"><i class="bi bi-instagram"></i></a>
                       <a href="https://id.linkedin.com/in/ridzki-ramadhan-158b55108"><i class="bi bi-linkedin"></i></a>
@@ -460,12 +489,10 @@
                   </div>
                 </div>
               </div>
-
             </div>
-
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-right" data-aos-delay="100">
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-13.jpg" class="img-fluid" alt="">
                   <div class="member-content">
@@ -477,27 +504,29 @@
                         Taiwan University of Science and Technology
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                       <a href="https://instagram.com/nadiaamumtaz"><i class="bi bi-instagram"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            </div>
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-14.jpg" class="img-fluid" alt="">
                   <div class="member-content">
                     <h4 class="member-full-name"><a href="https://torche.app/tutors/riswanda-himawan">Riswanda Himawan</a></h4>
-
+            
                     <span class="subject">Chemical Process Simulation, Process Equipment Design</span>
                     <div class="desc-tutor">
                       <p class="short-desc-tutor">
                         Process Engineer Petrochemical and Chemical Engineer enthausiast
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                       <a href="https://www.instagram.com/riswandahimawan/"><i class="bi bi-instagram"></i></a>
                       <a href="https://id.linkedin.com/in/riswanda-himawan-5184aa137"><i class="bi bi-linkedin"></i></a>
@@ -505,42 +534,44 @@
                   </div>
                 </div>
               </div>
-
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            </div>
+          
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-15.jpg" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4 class="member-full-name"><a href="https://torche.app/tutors/shafira-nur-adiningsih">Shafira Nur Adiningsih</a></h4>
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/shafira-nur-adiningsih">Shafira Nur
+                        Adiningsih</a></h4>
                     <span class="subject">Chemical Engineering Thermodynamics, Mass and Energy Balances, Numerical Computation for
                       Engineers</span>
-
+            
                     <!-- <div class="desc-tutor">
-                      <p class="short-desc-tutor">
-
-                      </p>
-                    </div> -->
-                    
+                                  <p class="short-desc-tutor">
+            
+                                  </p>
+                                </div> -->
+            
                     <div class="social">
                       <!-- <a href="https://twitter.com/arya1302"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i class="bi bi-journal-album"></i></a>
-                        <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a> -->
-
+                                    <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i class="bi bi-journal-album"></i></a>
+                                    <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a> -->
+            
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
-
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-right" data-aos-delay="100">
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-16.jpg" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4 class="member-full-name"><a href="https://torche.app/tutors/sabtin-maulidiyah-hani">Sabtin Maulidiyah Hani</a></h4>
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/sabtin-maulidiyah-hani">Sabtin Maulidiyah
+                        Hani</a></h4>
                     <span class="subject">Fundamentals of Analytical Chemistry, Fundamentals of Chemistry</span>
                     <div class="desc-tutor">
                       <p class="short-desc-tutor">
@@ -549,7 +580,7 @@
                         Malang (UM).
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                       <a href="https://www.facebook.com/sabtin.hani"><i class="bi bi-facebook"></i></a>
                       <a href="https://www.instagram.com/sabtinhani/"><i class="bi bi-instagram"></i></a>
@@ -558,62 +589,64 @@
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            </div>
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-17.jpg" class="img-fluid" alt="">
                   <div class="member-content">
                     <h4 class="member-full-name"><a href="https://torche.app/tutors/yulia-dwi-putri">Yulia Dwi Putri</a></h4>
                     <span class="subject">Organic Chemistry for Engineers</span>
-                    
+            
                     <!-- <div class="desc-tutor"> -->
-                      <p class="short-desc-tutor">
-                        Organic chemistry tutors at TORCHE Education
-                      </p>
+                    <p class="short-desc-tutor">
+                      Organic chemistry tutors at TORCHE Education
+                    </p>
                     <!-- </div> -->
-                    
+            
                     <div class="social">
                       <a href="https://www.instagram.com/yuliadwptri/?hl=en"><i class="bi bi-instagram"></i></a>
-                      <a href="https://www.linkedin.com/in/yulia-dwi-putri-524686137/"><i
-                          class="bi bi-linkedin"></i></a>
+                      <a href="https://www.linkedin.com/in/yulia-dwi-putri-524686137/"><i class="bi bi-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+            </div>
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-18.jpg" class="img-fluid" alt="">
                   <div class="member-content">
                     <h4 class="member-full-name"><a href="https://torche.app/tutors/yevonnael-andrew">Yevonnael Andrew</a></h4>
-                    <span class="subject">Fundamentals of Physics, Numerical Computation for Engineers, Statistics & Probability</span>
-                    
+                    <span class="subject">Fundamentals of Physics, Numerical Computation for Engineers, Statistics &
+                      Probability</span>
+            
                     <!-- <div class="desc-tutor">
-                      <p class="short-desc-tutor">
-
-                      </p>
-                    </div> -->
-                    
+                                  <p class="short-desc-tutor">
+            
+                                  </p>
+                                </div> -->
+            
                     <div class="social">
                       <!-- <a href="https://twitter.com/arya1302"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i class="bi bi-journal-album"></i></a>
-                        <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a> -->
+                                    <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i class="bi bi-journal-album"></i></a>
+                                    <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a> -->
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
-
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" data-aos-delay="100">
+          
+            <div class="col-lg-4 col-md-6  tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-19.jpg" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4 class="member-full-name"><a href="https://torche.app/tutors/nur-hendri-wahyu">Nur Hendri Wahyu Firdaus</a></h4>
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/nur-hendri-wahyu">Nur Hendri Wahyu Firdaus</a>
+                    </h4>
                     <span class="subject">Fundamentals of Mass Transfer</span>
                     <div class="desc-tutor">
                       <p class="short-desc-tutor">
@@ -622,7 +655,7 @@
                         handling waste research and laboratory analysis.
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                       <a href="https://www.instagram.com/hendry_wf/"><i class="bi bi-instagram"></i></a>
                       <a href="https://linkedin.com/in/nurhendriwahyuf"><i class="bi bi-linkedin"></i></a>
@@ -630,43 +663,46 @@
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" data-aos-delay="100">
+            </div>
+          
+            <div class="col-lg-4 col-md-6 tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-20.jpg" class="img-fluid" alt="">
                   <div class="member-content">
                     <h4 class="member-full-name"><a href="https://torche.app/tutors/adam-aji-prayoga">Adam Aji Prayoga</a></h4>
                     <span class="subject">Fundamentals of Chemistry, Fundamentals of Analytical Chemistry</span>
                     <!-- <div class="desc-tutor">
-                      <p class="short-desc-tutor">
-
-                      </p>
-                    </div> -->
-                    
+                                  <p class="short-desc-tutor">
+            
+                                  </p>
+                                </div> -->
+            
                     <div class="social">
                       <!-- <a href="https://twitter.com/arya1302"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i class="bi bi-journal-album"></i></a>
-                        <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a> -->
+                                    <a href="https://www.researchgate.net/profile/Muhammad-Ramadhan-27"><i class="bi bi-journal-album"></i></a>
+                                    <a href="https://www.instagram.com/ary.ramadhan/"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/arya-ramadhan/"><i class="bi bi-linkedin"></i></a> -->
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" data-aos-delay="100">
+            </div>
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-21.jpg" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4 class="member-full-name"><a href="https://torche.app/tutors/ajeng-triane-syawalia">Ajeng Triane Syawalia</a></h4>
+                    <h4 class="member-full-name"><a href="https://torche.app/tutors/ajeng-triane-syawalia">Ajeng Triane Syawalia</a>
+                    </h4>
                     <span class="subject">Fundamental of Chemistry</span>
                     <!-- <div class="desc-tutor"> -->
-                      <p class="short-desc-tutor">
-                        Chemistry Lecturer, Chemistry Tutor
-                      </p>
+                    <p class="short-desc-tutor">
+                      Chemistry Lecturer, Chemistry Tutor
+                    </p>
                     <!-- </div> -->
-                    
+            
                     <div class="social">
                       <a href="https://www.instagram.com/ajeng_syawalia/"><i class="bi bi-instagram"></i></a>
                       <a href="https://id.linkedin.com/in/ajengtrianes"><i class="bi bi-linkedin"></i></a>
@@ -674,19 +710,16 @@
                   </div>
                 </div>
               </div>
-
             </div>
-
-            <div class="row">
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" data-aos-delay="100">
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+              <div class="d-flex align-items-stretch">
                 <div class="member">
                   <img src="../assets/img/trainers/tutors-22.jpg" class="img-fluid" alt="">
                   <div class="member-content">
                     <h4 class="member-full-name"><a href="./tutors/claritta-sukmalovelina.html">Claritta Sukmalovelina</a></h4>
                     <span class="subject">Fundamental of Heat Transfer, Process Control Dynamics, Transport Phenomena</span>
-                    
+            
                     <div class="desc-tutor">
                       <p class="short-desc-tutor">
                         Claritta graduated from Institut Teknologi Bandung majoring in Chemical Engineering and
@@ -694,7 +727,7 @@
                         experience in private teaching.
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                       <a href="https://www.instagram.com/claritta_sukma/"><i class="bi bi-instagram"></i></a>
                       <a href="https://www.linkedin.com/in/claritta-sukma/"><i class="bi bi-linkedin"></i></a>
@@ -702,22 +735,24 @@
                   </div>
                 </div>
               </div>
-
-              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom" data-aos-delay="100">
-                <div class="member">  
+            </div>
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch tutors-item" >
+              <div class="d-flex align-items-stretch">
+                <div class="member">
                   <img src="../assets/img/trainers/tutors-23.jpg" class="img-fluid" alt="">
                   <div class="member-content">
-                    <h4 class="member-full-name"><a href="./tutors/esterlita-makaria-aritonang.html">Esterlita Makaria Aritonang</a></h4>
+                    <h4 class="member-full-name"><a href="./tutors/esterlita-makaria-aritonang.html">Esterlita Makaria Aritonang</a>
+                    </h4>
                     <span class="subject">Engineering Economy, Chemical Reaction Engineering, Statistics & Probability</span>
-                    
+            
                     <div class="desc-tutor">
                       <p class="short-desc-tutor">
                         Ester completed her bachelor's degree in chemical engineering at the Bandung Institute of
                         Technology and is currently working at Unilever Oleochemical Indonesia as Management Trainee.
                       </p>
                     </div>
-                    
+            
                     <div class="social">
                       <a href="https://www.instagram.com/esterlitaart/"><i class="bi bi-instagram"></i></a>
                       <a href="https://www.linkedin.com/in/esterlita-aritonang-56363614b/"><i class="bi bi-linkedin"></i></a>
@@ -725,10 +760,11 @@
                   </div>
                 </div>
               </div>
-
             </div>
+          
+          </div>
 
-          <a id="loadMore" style="cursor: pointer;" class="button d-flex justify-content-center btn-outline-primary rounded-pill px-5 py-1 border-bottom border-top border-end border-start border-primary" onmouseover=""> Load More </a>
+          <!-- <a id="loadMore" style="cursor: pointer;" class="button d-flex justify-content-center btn-outline-primary rounded-pill px-5 py-1 border-bottom border-top border-end border-start border-primary" onmouseover=""> Load More </a> -->
 
 
         </div>
@@ -806,21 +842,8 @@
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Script Load More -->
-    <script>
-      //load more
-      $(document).ready(function(){
-        $(".member").slice(0, 6).show();
-        $("#loadMore").on("click", function(e){
-          e.preventDefault();
-          $(".member:hidden").slice(0, 6).slideDown();
-          if($(".member:hidden").length == 0) {
-            $("#loadMore").text("All tutors have been showed!").addClass("noContent");
-          }
-        });
-      })
-      //end load more
-    </script>
+
+
 
 
     <!-- Vendor JS Files -->
@@ -836,5 +859,37 @@
 
     <!-- Template Main JS File -->
     <script src="../assets/js/main.js"></script>
+
+    <script>
+      var $grid = $('.tutors-container').isotope({
+        itemSelector : '.tutors-item',
+        getSortData: {
+          memberfullname: '.member-full-name'
+        }
+      });
+
+      $('.sort-button-group').on( 'click', 'button', function() {
+
+        /* Get the element name to sort */
+        var sortValue = $(this).attr('data-sort-value');
+        //console.log(sortValue);
+
+        /* Get the sorting direction: asc||desc */
+        var direction = $(this).attr('data-sort-direction');
+    
+        /* convert it to a boolean */
+        var isAscending = (direction == 'asc');
+        var newDirection = (isAscending) ? 'desc' : 'asc';
+    
+        /* pass it to isotope */
+        $grid.isotope({ sortBy: sortValue, sortAscending: isAscending });
+    
+        $(this).attr('data-sort-direction', newDirection);
+    
+        var span = $(this).find('.bi');
+        span.toggleClass('bi-caret-up-fill bi-caret-down-fill');
+    
+      });
+    </script>
   </body>
 </html>
