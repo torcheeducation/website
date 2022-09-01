@@ -385,4 +385,18 @@
 
   //end auto-scroll for services pages
 
-  
+  // <!-- Script Load More -->
+  // <script>
+  //   //load more
+  //   $(document).ready(function(){
+  //     $(".member").slice(0, 6).show();
+  //     $("#loadMore").on("click", function(e){
+  //       e.preventDefault();
+  //       $(".member:hidden").slice(0, 6).slideDown();
+  //       if($(".member:hidden").length == 0) {
+  //         $("#loadMore").text("All tutors have been showed!").addClass("noContent");
+  //       }
+  //     });
+  //   })
+  //   //end load more
+  // </script>

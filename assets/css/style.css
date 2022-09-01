@@ -1801,12 +1801,15 @@ section {
 /*--------------------------------------------------------------
 # Tutors
 --------------------------------------------------------------*/
+
 .tutors .member {
   text-align: center;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #eef0ef;
-  display: none; /* Hide all tutors, until load more is clicked */
+  height: 95vh;
+  /* display: none;  */
+  /* Hide all tutors, until load more is clicked */
 }
 .tutors .member img {
   margin: -1px -1px 30px -1px;
