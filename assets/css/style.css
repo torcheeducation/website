@@ -1806,8 +1806,6 @@ section {
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #eef0ef;
-  min-height: 590px;
-  max-height: auto;
   /* display: none;  */
   /* Hide all tutors, until load more is clicked */
 }
