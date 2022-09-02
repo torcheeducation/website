@@ -1801,11 +1801,14 @@ section {
 /*--------------------------------------------------------------
 # Tutors
 --------------------------------------------------------------*/
+
+
 #tutors .member {
   text-align: center;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #eef0ef;
+  min-height: 50%;
   /* display: none;  */
   /* Hide all tutors, until load more is clicked */
 }
