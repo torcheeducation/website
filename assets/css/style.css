@@ -1801,59 +1801,61 @@ section {
 /*--------------------------------------------------------------
 # Tutors
 --------------------------------------------------------------*/
-
-.tutors .member {
+#tutors .member {
   text-align: center;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #eef0ef;
-  height: 95vh;
+  min-height: 590px;
+  max-height: auto;
   /* display: none;  */
   /* Hide all tutors, until load more is clicked */
 }
-.tutors .member img {
+#tutors .member img {
   margin: -1px -1px 30px -1px;
+  width: 100%;
 }
-.tutors .member .member-content {
+#tutors .member .member-content {
   display: flex;
   flex-direction: column;
   padding: 0 20px 30px 20px;
+  height: 100% !important;
 }
-.tutors .member .member-content h4 a{
+#tutors .member .member-content h4 a{
   color: #37423b;
   transition: 0.3s;
   font-size: 22px;
 }
-.tutors .member .member-content h4 a:hover{
+#tutors .member .member-content h4 a:hover{
   color: #3271a8;
 }
-.tutors .member h4 {
+#tutors .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
 }
-.tutors .member .subject {
+#tutors .member .subject {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
-.tutors .member p {
+#tutors .member p {
   padding-top: 10px;
   font-size: 14px;
   font-style: italic;
   color: #aaaaaa;
 }
-.tutors .member .social {
+#tutors .member .social {
   margin-top: 15px;
 }
-.tutors .member .social a {
+#tutors .member .social a {
   color: #3271a8;
   transition: 0.3s;
 }
-.tutors .member .social a:hover {
+#tutors .member .social a:hover {
   color: #0b122a;
 }
-.tutors .member .social i {
+#tutors .member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
