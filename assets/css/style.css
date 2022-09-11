@@ -2160,14 +2160,14 @@ section {
   border-radius: 50px;
   margin-left: 10px;
   position: relative;
-  z-index: 3;
+  z-index: 5;
 }
 .courses .trainer .trainer-profile .img2 {
   max-width: 50px;
   border: 3px solid #fff;
   border-radius: 50px;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   left: 25px;
 }
 .courses .trainer .trainer-profile .img3 {
@@ -2175,8 +2175,24 @@ section {
   border: 3px solid #fff;
   border-radius: 50px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   left: 50px;
+}
+.courses .trainer .trainer-profile .img4 {
+  max-width: 50px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+  left: 75px;
+}
+.courses .trainer .trainer-profile .img5 {
+  max-width: 50px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1;
+  left: 100px;
 }
 /* End of Overlapping tutor images  */
 .courses .trainer .trainer-profile span {
@@ -2192,6 +2208,24 @@ section {
   color: #0b6bd3;
 }
 /* Tutor name for overlapiing tutor images  */
+.courses .trainer .trainer-profile .fivetutors {
+  padding-left: 110px;
+}
+.courses .trainer .trainer-profile .fivetutors span a {
+  color: #5a6c60;
+}
+.courses .trainer .trainer-profile .fivetutors span a:hover {
+  color: #0b6bd3;
+}
+.courses .trainer .trainer-profile .fourtutors {
+  padding-left: 85px;
+}
+.courses .trainer .trainer-profile .fourtutors span a {
+  color: #5a6c60;
+}
+.courses .trainer .trainer-profile .fourtutors span a:hover {
+  color: #0b6bd3;
+}
 .courses .trainer .trainer-profile .tritutors {
   padding-left: 60px;
 }
@@ -2300,6 +2334,15 @@ section {
 }
 .course-details .course-info a {
   color: #0B122A;
+}
+.course-details .tutor-course {
+  padding: 15px 10px 5px 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.course-details .tutor-course:hover {
+  background-color: #eef0ef;
+  transition: 0.4s;
 }
 
 /*--------------------------------------------------------------
