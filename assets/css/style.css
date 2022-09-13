@@ -2835,6 +2835,84 @@ a.cat-item h5{
 
 /* End of awards */
 
+/*--------------------------------------------------------------
+# Creative Brief Comprehensive Class
+--------------------------------------------------------------*/
+#information {
+  margin-top: 30px; 
+  margin-bottom: 20px;
+}
+
+#information .order-information{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#information .information-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#information .information-description .information-short-desc{
+  text-align: justify; 
+  font-size: 18px;
+}
+
+#information .order-information .register-button {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+}
+
+#information .order-information .register-button {
+  background: #5885e9;
+  border: 2px solid #007bff;
+  color: #fff;
+}
+
+#information .order-information .register-button:hover {
+  background: #001973;
+  border-color: #0062cc;
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .order-information:nth-child(1){
+      order: 2;
+  }
+
+  .order-information:nth-child(2){
+      order: 1;
+  }
+
+  #information .information-description .information-short-desc{
+    text-align: justify; 
+    font-size: 16px;
+  }
+
+  #information .information-description{
+    padding: 0px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  #information .order-information .register-button{
+    width: 100%;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# End of Creative Brief Comprehensive Class
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Footer
