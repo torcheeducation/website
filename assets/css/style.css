@@ -2856,12 +2856,13 @@ a.cat-item h5{
 
 #information .information-description .information-short-desc{
   text-align: justify; 
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 30px;
 }
 
 #information .order-information .register-button {
   font-family: "Rajdhani", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
   padding: 10px 32px;
@@ -2894,7 +2895,7 @@ a.cat-item h5{
 
   #information .information-description .information-short-desc{
     text-align: justify; 
-    font-size: 16px;
+    font-size: 17px;
   }
 
   #information .information-description{
@@ -2909,6 +2910,67 @@ a.cat-item h5{
   }
 }
 
+
+.introduction-information .box{
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.184);
+  border-radius: 5px;
+  height: 100%;
+  background-color: #fafdff;
+}
+
+.introduction-information .box h3.class-name{
+  font-weight: 400;
+  margin: -20px -21px 20px -20px;
+  padding: 20px;
+  font-weight: 600;
+  color: #fff;
+  background: #003166;
+  border-radius: 3px 3px 0px 0px;
+  text-align: center;
+}
+
+.introduction-information .box .course-each-details{
+  font-weight: 600;
+}
+
+.introduction-information .box .prices {
+  text-align: center;
+}
+
+.introduction-information .box .prices h4 {
+  font-size: 36px;
+  color: #0B122A;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+  margin-bottom: 20px;
+}
+
+.introduction-information .box .prices h4 span {
+  color: #0B122A;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.introduction-information .box #courseDetailList1 .accordion-button,
+.introduction-information .box #courseDetailList2 .accordion-button{
+  background-color: #fafdff;
+}
+
+/*** Testimonial ***/
+.introduction-information .quotes-popular{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.introduction-information .quotes-personal{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.introduction-information .quotes-popular .bi-quote {
+  font-size: 48px;
+}
 
 /*--------------------------------------------------------------
 # End of Creative Brief Comprehensive Class
