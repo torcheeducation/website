@@ -2537,6 +2537,18 @@ section {
   margin-bottom: 10px;
 }
 
+@media (max-width: 992px) {
+  .job-details .job-apply {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .job-details .job-apply h4 {
+    text-align: center;
+  } */
+}
+
 /*--------------------------------------------------------------
 # Careers
 --------------------------------------------------------------*/
