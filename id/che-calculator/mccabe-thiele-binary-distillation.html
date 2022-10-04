@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id-ID">
+<html lang="en">
   <head>
     <!-- Google Tag Manager -->
     <script>
@@ -83,15 +83,15 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto" href="https://torche.app/id">Beranda</a></li>
-            <li><a class="nav-link scrollto" href="https://torche.app/id/#about">Tentang Kami</a></li>
-            <li><a class="nav-link scrollto" href="https://torche.app/id/#services">Layanan</a></li>
-            <li><a class="nav-link scrollto" href="https://torche.app/id/tutors">Tutor</a></li>
-            <li><a class="nav-link scrollto" href="https://torche.app/id/events">Event</a></li>
+            <li><a class="nav-link scrollto" href="https://torche.app">Home</a></li>
+            <li><a class="nav-link scrollto" href="https://torche.app#about">About</a></li>
+            <li><a class="nav-link scrollto" href="https://torche.app#services">Services</a></li>
+            <li><a class="nav-link scrollto" href="https://torche.app/tutors">Tutors</a></li>
+            <li><a class="nav-link scrollto" href="https://torche.app/events">Events</a></li>
             <li class="dropdown">
-              <a class="nav-link scrollto" href="#"><span>Kursus</span> <i class="bi bi-chevron-down"></i></a>
+              <a class="nav-link scrollto" href="#"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="https://torche.app/id/courses">Mata Kuliah</a></li>
+                <li><a href="https://torche.app/courses">Our Courses</a></li>
                 <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -101,22 +101,21 @@
                   <li><a href="#">Deep Drop Down 5</a></li>
                 </ul>
               </li> -->
-                <li><a href="https://torche.app/registration">Mendaftar kelas</a></li>
-                <li><a href="https://torche.app/pricing">Harga</a></li>
+                <li><a href="https://torche.app/registration">Register for Classes</a></li>
+                <li><a href="https://torche.app/pricing">Pricing</a></li>
               </ul>
             </li>
             <li class="dropdown">
               <a class="nav-link scrollto active" href="#"><span>Apps</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="https://torche.app/id/che-calculator">Web Calculator</a></li>
+                <li><a href="https://torche.app/che-calculator">Web Calculator</a></li>
               </ul>
             </li>
-            <li><a href="https://torche.app/careers">Karir</a></li>
+            <li><a href="https://torche.app/careers">Careers</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <!-- .navbar -->
-        
       </div>
     </header>
     <!-- #header -->
@@ -142,7 +141,7 @@
       <!--Section Team -->
       <section>
         <div class="container my-5">
-          <h1><b>Binary Distillation by McCabe-Thiele Method</b></h1>
+          <h1><b>Binary Distillation using McCabe-Thiele Method</b></h1>
           <h3>Basics of Binary Distillation</h3>
           <p>
             Distillation is a separation method of two chemical components by utilizing the difference in boiling point. The goal of this calculation is to obtain theoretical stage
@@ -159,31 +158,26 @@
             There are several components in a McCabe-Thiele Diagram:
             <h5>x-y diagram</h5>
             The x-y diagram depicts vapor-liquid equilibrium data of the binary components, which any points on the graph shows the amount of liquid that is equilibrium 
-            with vapor at certain temperature. This graph is used to calculate relative volatility (\(\alpha\)) to determine the amount of separation possible. Relative volatility
-            is as follows:
+            with vapor at certain temperature. The diagram will help to determine the relative volatility (\(\alpha\)) to predict the amount of separation possible. 
+            When \(\alpha &lt 1.05\), the separation process will take more trays as the components are difficult to seperate using this method. Relative volatility is as follows:
             \[\alpha= {{y_i/x_i}\over{y_j/x_j}}\]
             Where \(y\) is the vapor fraction, \(x\) is the liquid fraction, and \(i, j\) is the chemical components. In the binary system, the above equation can be expressed as
             \[\alpha= {{y_i/x_i}\over{(1-y_i)/(1-x_i)}}\]
             <br>
-            For bubble point calculations which vapor-phase compositions are unknown, we can simplify the calculations by asumming \(\sum y_i=1\), so that the Raoult's law become
-            \[P=\sum_i{x_i P_i^{sat}}\]
-            While for dew point calculations, the unknown liquid-phase compositions can be simplified by asumming \(\sum x_i=1\), so that
-            \[P= {1\over \sum_i{yi/P_i^{sat}}}\]
-            For flash calculation, we calculate the composition based on material balance of the system,
-            \[z_i=V.y_i+L.x_i\]
-            where \(z_i\) is molar composition of the inlet feed, \(V\) is the vapor fractions, and \(L\) is the liquid fractions or \(L=1-V\). Bear in mind that flash calculation <b>can't be calculated</b> if <thead>
-            feed exists as <b>subcooled liquid</b> or <b>superheated vapor</b>.
+            <h5>Operating line</h5>
+            Operating line is a simple line equation to determine amount of liquid per amount of vapour (\( \mathcal{L} / \mathcal{V}\)) in the distillation process.
           </p>
           <h3>References</h3>
           <ol>
-            <li>Smith, J. M., Van Ness, H. C., Abbott, M. M., & Swihart, M. T. (2018). Introduction to Chemical Engineering Thermodynamics (8th ed.). McGraw-Hill.</li>
+            <li>McCabe, W. L., Harriott, P., & Smith, J. C. (2004). Unit Operations of Chemical Engineering (7th ed.). McGraw-Hill.</li>
+            <li>Geankoplis, C. J., Hersel, A. A., & Lepek, D. H. (2018). Transport Processes and Separation Process Principles (5th ed.). Prentice Hall.</li>
           </ol><br>
-          <h3><b>Bubble, Dew, and Flash Calculator</b></h3>
-          <p>See <a href="https://torche.app/che-calculator/bdpt-how-to-use"><u>how to use this calculator</u></a> for step-by-step guide.</p>
-          <h5><i>Example problem</i></h5>
+          <h3><b>McCabe-Thiele Binary Distillation Calculator</b></h3>
+          <!-- p>See <a href="https://torche.app/che-calculator/bdpt-how-to-use"><u>how to use this calculator</u></a> for step-by-step guide.</p-->
+          <!--h5><i>Example problem</i></h5>
           <p>
             Calculate the flash from a mixture of 15 mol water, 12 mol methanol, 22 mol ethanol, 36 mol propanol, and 15 mol acetone in a system of 1 bar and 50 degree Celsius!
-          </p>
+          </p-->
         </div>
         <div class="container" style="padding-bottom:73.22%; position:relative; display:block; width:100%;">
             <iframe style="position:absolute; top:0; left:0;"width="100%" height="100%" frameborder="0" scrolling="yes" src="https://distillation-apps.technologytorch.repl.co/"></iframe>
@@ -204,38 +198,33 @@
       <div class="footer-top">
         <div class="container">
           <div class="row">
-  
             <div class="col-lg-6 col-md-6 footer-info">
-              <h3>TORCHE</h3>
-              <p>TORCHE Education adalah perusahaan startup teknologi pendidikan yang berbasis di Indonesia, dengan fokus pada teknik kimia, teknik bioproses, dan mata pelajaran teknik proses lainnya.</p>
+              <h3>Torche</h3>
+              <p>TORCHE Education is a education technology startup company based in Indonesia, focusing on chemical engineering, bioprocess engineering, and other process engineering subjects.</p>
             </div>
-  
+
             <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Link</h4>
+              <h4>Navigation</h4>
               <ul>
-                <li><a href="https://torche.app/id/#hero">Beranda</a></li>
-                <li><a href="https://torche.app/id/#about">Tentang Kami</a></li>
-                <li><a href="https://torche.app/id/#services">Layanan</a></li>
-                <li><a href="https://torche.app/id/courses">Kursus</a></li>
-                <li><a href="https://torche.app/careers">Karir</a></li>
-                <!--
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                -->
+                <li><a href="https://torche.app#hero">Home</a></li>
+                <li><a href="https://torche.app#about">About us</a></li>
+                <li><a href="https://torche.app#services">Services</a></li>
+                <li><a href="https://torche.app/courses">Courses</a></li>
+                <li><a href="https://torche.app/careers">Careers</a></li>
               </ul>
             </div>
-  
+
             <div class="col-lg-4 col-md-6 footer-contact">
-              <h4>Kontak Kami</h4>
+              <h4>Contact Us</h4>
               <p>
                 <strong>PT. Obor Pengetahuan Indonesia untuk Masyarakat</strong><br />
-                Jl. Kelapa Lilin Utara XIV Blok DG 8 No. 27<br>
-                Kab. Tangerang, Banten 15810<br>
-                Indonesia <br>
-                <strong>Whatsapp Business:</strong> +62 851 5521 6117<br>
-                <strong>Email:</strong> admin@torche.app<br>
+                Jl. Kelapa Lilin Utara XIV Blok DG 8 No. 27<br />
+                Kab. Tangerang, Banten 15810<br />
+                Indonesia <br />
+                <strong>Whatsapp Business:</strong> +62 851 5521 6117<br />
+                <strong>Email:</strong> admin@torche.app<br />
               </p>
-  
+
               <div class="social-links">
                 <a href="https://twitter.com/TorcheEdu" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="https://www.facebook.com/torche.edu" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -247,28 +236,25 @@
                 <a href="https://wa.me/+6285155216117" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
                 <a href="https://page.line.me/229wiguf" class="line"><i class="bi bi-line"></i></a>
               </div>
-  
             </div>
-  
           </div>
         </div>
       </div>
-  
+
       <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
-        </div>
+        <div class="copyright">&copy; Copyright <strong>NewBiz</strong>. All Rights Reserved</div>
         <div class="credits">
           <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-        -->
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+      -->
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
-    </footer><!-- End Footer -->
+    </footer>
+    <!-- End Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
