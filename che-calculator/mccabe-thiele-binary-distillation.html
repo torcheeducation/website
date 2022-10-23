@@ -165,19 +165,20 @@
             Where \(y\) is the vapor fraction, \(x\) is the liquid fraction, and \(i, j\) is the chemical components. In the binary system, the above equation can be expressed as
             \[\alpha= {{y_i/x_i}\over{(1-y_i)/(1-x_i)}}\]
             <br>
-            For bubble point calculations which vapor-phase compositions are unknown, we can simplify the calculations by asumming \(\sum y_i=1\), so that the Raoult's law become
-            \[P=\sum_i{x_i P_i^{sat}}\]
-            While for dew point calculations, the unknown liquid-phase compositions can be simplified by asumming \(\sum x_i=1\), so that
-            \[P= {1\over \sum_i{yi/P_i^{sat}}}\]
-            For flash calculation, we calculate the composition based on material balance of the system,
-            \[z_i=V.y_i+L.x_i\]
-            where \(z_i\) is molar composition of the inlet feed, \(V\) is the vapor fractions, and \(L\) is the liquid fractions or \(L=1-V\). Bear in mind that flash calculation <b>can't be calculated</b> if <thead>
-            feed exists as <b>subcooled liquid</b> or <b>superheated vapor</b>.
+            <h5>Operating line</h5>
+            Operating line is a simple line equation to determine amount of liquid per amount of vapour (\( \mathcal{L} / \mathcal{V}\)) in the distillation process.
           </p>
           <h3>References</h3>
           <ol>
-            <li>Smith, J. M., Van Ness, H. C., Abbott, M. M., & Swihart, M. T. (2018). Introduction to Chemical Engineering Thermodynamics (8th ed.). McGraw-Hill.</li>
+            <li>McCabe, W. L., Harriott, P., & Smith, J. C. (2004). Unit Operations of Chemical Engineering (7th ed.). McGraw-Hill.</li>
+            <li>Geankoplis, C. J., Hersel, A. A., & Lepek, D. H. (2018). Transport Processes and Separation Process Principles (5th ed.). Prentice Hall.</li>
           </ol><br>
+          <h3><b>McCabe-Thiele Binary Distillation Calculator</b></h3>
+          <!-- p>See <a href="https://torche.app/che-calculator/bdpt-how-to-use"><u>how to use this calculator</u></a> for step-by-step guide.</p-->
+          <!--h5><i>Example problem</i></h5>
+          <p>
+            Calculate the flash from a mixture of 15 mol water, 12 mol methanol, 22 mol ethanol, 36 mol propanol, and 15 mol acetone in a system of 1 bar and 50 degree Celsius!
+          </p-->
           <h3><b>Bubble, Dew, and Flash Calculator</b></h3>
           <p>See <a href="https://torche.app/che-calculator/bdpt-how-to-use"><u>how to use this calculator</u></a> for step-by-step guide.</p>
           <h5><i>Example problem</i></h5>
