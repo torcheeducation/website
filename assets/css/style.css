@@ -1575,7 +1575,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/services/testimonials-bg.jpg") no-repeat;
+  background: url("../img/services/testimonials-bg.webp") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -2656,7 +2656,7 @@ section {
 } */
 
 .page-header {
-    background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../img/carousel-1.webp) center center no-repeat;
     background-size: cover;
 }
 
