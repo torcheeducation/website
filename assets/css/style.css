@@ -1197,7 +1197,7 @@ section {
   line-height: 1rem;
   font-weight: lighter;
   font-size: 0.9em;
-  align: center;
+  text-align: center;
 }
 .pricing .btn-register:hover {
   background: #5885E9;
