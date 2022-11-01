@@ -355,7 +355,7 @@ h6 {
 #hero {
   width: 100%;
   position: relative;
-  background: url("../img/hero-bg.png") center bottom no-repeat;
+  background: url("../img/hero-bg.webp") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
 }
@@ -1197,7 +1197,7 @@ section {
   line-height: 1rem;
   font-weight: lighter;
   font-size: 0.9em;
-  align: center;
+  text-align: center;
 }
 .pricing .btn-register:hover {
   background: #5885E9;
@@ -1575,7 +1575,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/services/testimonials-bg.jpg") no-repeat;
+  background: url("../img/services/testimonials-bg.webp") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -2656,7 +2656,7 @@ section {
 } */
 
 .page-header {
-    background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../img/carousel-1.webp) center center no-repeat;
     background-size: cover;
 }
 
