@@ -164,8 +164,40 @@
             Where \(y\) is the vapor fraction, \(x\) is the liquid fraction, and \(i, j\) is the chemical components. In the binary system, the above equation can be expressed as
             \[\alpha= {{y_i/x_i}\over{(1-y_i)/(1-x_i)}}\]
             <br>
-            <h5>Operating line</h5>
-            Operating line is a simple line equation to determine amount of liquid per amount of vapour (\( \mathcal{L} / \mathcal{V}\)) in the distillation process.
+            <h5>Operating line in rectifying section</h5>
+            Operating line is a simple line equation to determine amount of liquid per amount of vapour (\( \mathcal{L} / \mathcal{V}\)) in the distillation process. If it is assumed 
+            that the heat of mixing is negligible and that the difference in the molar latent heats of vaporization of the binary system also differs by a negligible amount, then the 
+            observed relationship between any two passing streams is simplified to streams is simplified to:
+            \[y = {{\mathcal{L}}\over{\mathcal{V}}} x + {{x_D D}\over{\mathcal{V}}} \]
+            where \(y\) is the mole fraction of the more volatile component of the vapor, \(x\) is the mole fraction of more volatile component in the liquid, \(x_D\) is the
+            mole fraction of the more volatile component in the distillate, \(D\) is the distilate flow rate (mol/time), \(\mathcal{L}\) is the total flow rate of the liquid
+            stream in the rectifying section (mol/time), and \(\mathcal{V}\) is the total flow rate of the vapor stream in the rectifying section (mol/time). <br>
+            This is known as the operating line for the rectifying section, or the upper operating line, in short. Remembering that the x-y diagram is a plot of vapor (\(\mathcal{V}\)) 
+            vs. liquid (\(\mathcal{L}\)), it can be seen that the operating line is a simple \(y=mx+b\) equation. Therefore, with the point (\(x_D,y_1\)) and the slope 
+            (\(\mathcal{L}\)/\(\mathcal{V}\)), this operating line can be plotted. <br>
+            <br>
+            <h5>Operating line in stripping section</h5>
+            With the similar assumptions with the operating line in rectifying section, the observed relationship between any two passing streams is simplified to:
+            \[y = {{\overline{\mathcal{L}}}\over{\overline{\mathcal{V}}}} x + {{x_B B}\over{\overline{\mathcal{V}}}} \]
+            where \(y\) is the mole fraction of the more volatile component of the vapor, \(x\) is the mole fraction of more volatile component in the liquid, \(x_B\) is the
+            mole fraction of the more volatile component in the bottom, \(B\) is the bottom flow rate (mol/time), \(\overline{\mathcal{L}}\) is the total flow rate of the liquid
+            stream in the stripping section (mol/time), and \(\overline{\mathcal{V}}\) is the total flow rate of the vapor stream in the stripping section (mol/time). <br>
+            This is known as the operating line for the stripping section, or the lower operating line, in short. Again, it can be seen that the operating line is a simple \(y=mx+b\) 
+            equation. <br>
+            <br>
+            <h5>Feed Line</h5>
+            Feed line, also known as q-line represents the intersections of the upper and lower operating lines. The stage that crosses the q-line is the optimum feed plate.
+            The q-line is that drawn between the intersection of the operating lines, and where the feed composition lies on the diagonal line. <br>
+            <img src="img/feedlin.gif">
+            <p>q = 0 (saturated vapour)<br>
+              q = 1 (saturated liquid) <br>
+              0 < q < 1 (mix of liquid and vapour) <br>
+              q > 1 (subcooled liquid) <br>
+              q < 0 (superheated vapour) <br>
+              The q-lines for the various feed conditions are shown in the diagram on the top. If the slope of the q-line is not directly known, 
+              look at the feed plate enthalpic conditions.</p>
+            \[ q = {{H_V - h_F}\over{H_V - h_l}} \]
+            where \(H_V\) is enthalpy per mol of vapor, \(h_l\) is enthalpy per mol of liquid, and \(h_F\) is enthalpy per mol of feed.
           </p>
           <h3>References</h3>
           <ol>
