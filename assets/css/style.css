@@ -2989,6 +2989,334 @@ a.cat-item h5{
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
+# Landing Page Starts
+--------------------------------------------------------------*/
+
+#welcome-section-landing-page {
+  padding: 20px 30px;
+}
+
+#welcome-section-landing-page .welcoming-section{
+  padding: 100px 30px 100px 0px;
+}
+
+#welcome-section-landing-page .welcoming-section h1.introductory-landing-page {
+  font-size: 56px;
+}
+
+#welcome-section-landing-page .welcoming-section h1.introductory-landing-page span {
+  color: #5885e9;
+}
+
+#welcome-section-landing-page .welcoming-section p {
+  font-size: 20px;
+}
+
+#welcome-section-landing-page .welcoming-section button.register-now{
+  background: #5885e9;
+  border: 2px solid #007bff;
+  font-family: "Cairo", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+}
+
+#welcome-section-landing-page img.welcome-section-vector{
+  width: 100%;
+  height: 100%;
+}
+
+#welcome-section-landing-page .first-benefit.paragraph-benefit p{
+  padding: 0px 30px;
+}
+
+#welcome-section-landing-page .all-top-universities {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#welcome-section-landing-page .all-top-universities .top-universities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#welcome-section-landing-page .top-universities .top-university {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+}
+
+#welcome-section-landing-page .top-universities .top-university img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+#welcome-section-landing-page .top-universities .top-university .university-info {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+#welcome-section-landing-page .top-universities .top-university .university-info-content {
+  margin-top: 50px;
+  transition: margin 0.2s;
+}
+
+#welcome-section-landing-page .top-universities .top-university:hover .university-info {
+  background: rgba(0, 62, 128, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#welcome-section-landing-page .top-universities .top-university:hover .university-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+#welcome-section-landing-page .top-universities .top-university h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#welcome-section-landing-page .second-benefit,
+#welcome-section-landing-page .third-benefit{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#welcome-section-landing-page .second-benefit img.benefit-image{
+  width: 100%;
+  max-width: 640px;
+  max-height: 312px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#welcome-section-landing-page .third-benefit img.benefit-image{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+#welcome-section-landing-page .paragraph-benefit p{
+  font-size: 20px;
+}
+
+#pricing .all-class-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#pricing .all-class-cards .class-cards{
+  width: 33.33%;
+  padding: 30px;
+  background-color: #F5F7FF;
+  border-radius: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pricing .all-class-cards .class-cards h5.nama-kelas-indo {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px
+}
+
+#pricing .all-class-cards .class-cards .benefits-class {
+  margin-bottom: 20px;
+}
+
+#pricing .all-class-cards .class-cards .benefits-class .benefit-class {
+  padding: 10px;
+}
+
+#pricing .all-class-cards .class-cards .benefits-class .benefit-class p{
+  font-size: 14px;
+}
+
+#pricing .all-class-cards .class-cards .benefits-class .benefit-class img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#pricing .all-class-cards .class-cards p {
+  margin: 0;
+}
+
+#pricing .all-class-cards .class-cards button.register-now{
+  background: #5885e9;
+  border: 2px solid #007bff;
+  font-family: "Cairo", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+}
+
+#testimonial-landing-page .paragraph-testimonial {
+  padding-top: 50px;
+}
+
+#testimonial-landing-page .testimonial-item .card-testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #F5F7FF;
+  border-radius: 20px;
+  margin: 20px 10px;
+  height: 90%;
+}
+
+#outro > .button-for-register-landing-page > button.register-now {
+  background: #5885e9;
+  border: 2px solid #007bff;
+  font-family: "Cairo", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 50px 100px;
+}
+
+@media screen and (max-width: 991px) {
+  #welcome-section-landing-page .welcoming-section{
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+  }
+
+  #welcome-section-landing-page img.welcome-section-vector{
+    padding: 50px 0px 0px 0px;
+  }
+
+  #welcome-section-landing-page .welcome-order:nth-child(1){
+    order: 2;
+  }
+
+  #welcome-section-landing-page .welcome-order:nth-child(2){
+    order: 1;
+  }
+
+  #welcome-section-landing-page .all-top-universities .top-universities{
+    width: 33.33%;
+    text-align: center;
+  }
+
+  #welcome-section-landing-page .all-top-universities .top-universities:nth-child(n+4){
+    width: 50%;
+    text-align: center;
+  }
+
+  #welcome-section-landing-page .second-benefit img.benefit-image{
+    width: 100%;
+    max-width: none;
+    max-height: none;
+  }
+
+  #welcome-section-landing-page .second-benefit {
+    padding-top: 0px;
+  }
+
+  #welcome-section-landing-page .second-benefit:nth-child(1){
+    order: 2;
+  }
+
+  #welcome-section-landing-page .second-benefit:nth-child(2){
+    order: 1;
+  }
+
+  #welcome-section-landing-page .paragraph-benefit {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  #welcome-section-landing-page .third-benefit {
+    padding-top: 0px;
+  }
+
+  #welcome-section-landing-page .third-benefit.paragraph-benefit {
+    padding-top: 100px;
+  }
+
+  #pricing .all-class-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  #pricing .all-class-cards .class-cards{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #welcome-section-landing-page .all-top-universities .top-universities{
+    width: 50%;
+    text-align: center;
+  }
+
+  #welcome-section-landing-page .all-top-universities .top-universities:nth-child(5){
+    width: 100%;
+    text-align: center;
+  }
+
+  #outro > .button-for-register-landing-page > button.register-now {
+    margin: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #welcome-section-landing-page .all-top-universities .top-universities{
+    width: 100% !important;
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# End of Landing Page
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
