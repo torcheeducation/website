@@ -2100,7 +2100,7 @@ section {
   margin-top: 20px;
   /* display: none;  */
   /* Hide all courses, until load more is clicked */
-  min-height: 620px;
+  min-height: 560px;
   max-height: 620px;
 }
 .courses .course-content {
